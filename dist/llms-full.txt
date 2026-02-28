@@ -1,0 +1,105 @@
+# Joel Karr -- Full Reference
+
+> Joel Karr is a Chief Technology Officer, author of "Don't Think When You Code," and creator of the ARC methodology for AI-era software development. With over 20 years of engineering leadership experience, he specializes in deliberate practice, software craft, platform modernization, and building high-performing engineering teams. He founded the GW Tech community in 2016.
+
+## About Joel Karr
+
+Joel Karr is a Chief Technology Officer with over 20 years in software engineering. His journey began at age 10 in small-town Illinois, learning QuickBASIC from a book his father found at a university bookstore. That early curiosity grew into a career defined by a core principle: mastery comes from drilling one small detail at a time.
+
+Throughout his career, Joel has led engineering teams through full-scale platform modernizations, survived Cyber Monday crashes that cost hundreds of thousands in lost revenue, and built engineering cultures rooted in deliberate practice. He teaches through stories, not lectures, connecting software engineering to craftsmanship, psychology, and the emerging role of AI in software development.
+
+Joel believes the future of AI-driven software development is not about typing faster -- it is about solving the right problems with clarity, discipline, and respect for the craft.
+
+### Areas of Expertise
+
+- Software Engineering
+- AI-Driven Software Development
+- Engineering Leadership
+- Deliberate Practice
+- Software Craft
+- Team Building
+- Platform Modernization
+- ARC Methodology
+
+### Contact
+
+- Email: joel@joelkarr.com
+- LinkedIn: https://linkedin.com/in/joelkarr
+- Website: https://joelkarr.com
+
+## Book: Don't Think When You Code
+
+"Don't Think When You Code" is a book about the craft of software engineering in the AI era, coming Summer 2026. It is drawn from over 20 years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice -- drilling one small detail at a time.
+
+From learning QuickBASIC as a 10-year-old in small-town Illinois to leading engineering teams through full-scale platform modernizations and AI transformations, Joel shares the stories, frameworks, and hard-won lessons that shaped his approach to building software and leading engineers.
+
+### Part 1: The Craft of Software Engineering
+
+Topics covered:
+- Finding flow states as a software engineer
+- Deliberate practice in software engineering
+- Pattern recognition and reducing cognitive load
+- Using analogies as engineering decision frameworks
+- How AI transforms the craft of writing software
+
+### Part 2: Leading Engineering Teams
+
+Topics covered:
+- The illusion of alignment in engineering organizations
+- Making architectural decisions durable
+- The feedback paradox and psychological safety
+- Performing under pressure during production outages
+- Spreading ideas by showing, not telling
+
+### Part 3: The Path to Engineering Leadership
+
+Topics covered:
+- Reducing uncertainty in software projects
+- Why big bang platform rewrites fail
+- Turning around struggling engineering teams
+- Protecting focus in chaotic engineering environments
+- Engineering leadership as a deliberate practice
+
+## ARC Methodology
+
+ARC is a methodology designed for the AI era, where the bottleneck is not typing speed -- it is whether you are solving the right problem. AI-assisted planning, code generation, and automated reviews have fundamentally changed development velocity. But speed without direction creates waste, and most software teams are optimizing for output instead of outcomes.
+
+The ARC methodology shifts your team's focus from maximizing output to maximizing outcomes. It respects the craft of software engineering while embracing AI tools that amplify human judgment and engineering expertise. It is built on principles learned from 20+ years of engineering leadership, deliberate practice, and surviving production disasters at scale.
+
+### The Six Steps of ARC
+
+#### Step 1: Opportunities
+Start with valuable outcomes, not feature requests. Define success metrics before work begins. Each opportunity represents a measurable business outcome your team should pursue.
+
+#### Step 2: Ventures
+Each opportunity spawns multiple parallel ventures, each owned end-to-end by a single engineer with AI-assisted development tools. Ventures are independent work streams that allow parallel execution.
+
+#### Step 3: Task Templates
+Use task templates as shorthand for common task groups engineers already understand. Each template contains interfaces, objects, and tasks that structure the work without over-specifying implementation details.
+
+#### Step 4: Team Review
+Review design decisions that are expensive to change, such as interfaces, data structures, and resilience plans. After review, trust the engineer to build. Focus review effort on what matters most.
+
+#### Step 5: Build and Test
+Engineers build with AI-assisted coding tools, test incrementally, and validate against success criteria before shipping. The focus is on meeting the defined success metrics from step one.
+
+#### Step 6: Measure
+Evaluate ventures against the success metrics defined in step one. Learn from outcomes and feed insights back into future opportunities. This closes the loop and drives continuous improvement.
+
+### Why ARC Differs from Traditional Approaches
+
+ARC was designed specifically for teams using AI-assisted development tools. It focuses on outcomes over output, trusts individual engineers with end-to-end ownership, and structures review around decisions that are expensive to reverse rather than line-by-line code review.
+
+## GW Tech Community
+
+GW Tech is a technology community founded by Joel Karr in 2016. It connects software engineers, engineering leaders, and technologists who are passionate about innovation and software craft. What started as a gathering of curious minds has grown into a vibrant network focused on sharing ideas, building connections, and exploring innovation in AI-era software development.
+
+### Community Features
+
+- Community-Driven: Connect with software engineers, engineering leaders, and technologists who share a passion for software craft and deliberate practice.
+- Tech Events: Regular meetups, tech talks, and events exploring AI-driven development, engineering leadership, and software craft.
+- Annual Awards (Coming 2026): Recognizing excellence and innovation in technology through the inaugural GW Tech Annual Awards.
+
+### Join GW Tech
+
+- LinkedIn Group: https://www.linkedin.com/groups/15863032/
