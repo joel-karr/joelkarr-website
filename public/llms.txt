@@ -1,0 +1,44 @@
+# Joel Karr
+
+> Joel Karr is a Chief Technology Officer, author, and engineering leader specializing in AI-driven software development. He is the author of "Don't Think When You Code" and the creator of the ARC methodology. This site covers his work in engineering leadership, deliberate practice, software craft, and the GW Tech community.
+
+## About
+
+Joel Karr is a CTO with over 20 years of experience in software engineering. He began programming at age 10 with QuickBASIC in small-town Illinois. His career spans platform modernizations, production crisis management, and AI-driven transformations. He believes mastery comes from drilling one small detail at a time.
+
+- Email: joel@joelkarr.com
+- LinkedIn: https://linkedin.com/in/joelkarr
+- Website: https://joelkarr.com
+
+## Book: Don't Think When You Code
+
+A book about the craft of software engineering in the AI era, coming Summer 2026. Drawn from 20+ years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice.
+
+The book is organized into three parts:
+- Part 1: The Craft of Software Engineering
+- Part 2: Leading Engineering Teams
+- Part 3: The Path to Engineering Leadership
+
+## ARC Methodology
+
+ARC is a methodology for AI-era software development where the bottleneck is not typing speed but whether you are solving the right problem. It shifts focus from maximizing output to maximizing outcomes.
+
+The six steps of ARC are:
+1. Opportunities: Start with valuable outcomes, not feature requests
+2. Ventures: Parallel work streams owned end-to-end by a single engineer
+3. Task Templates: Shorthand for common task groups containing interfaces, objects, and tasks
+4. Team Review: Review expensive-to-change design decisions, then trust the engineer
+5. Build and Test: Engineers build with AI-assisted tools, test incrementally
+6. Measure: Evaluate ventures against success metrics and feed insights back
+
+## GW Tech
+
+GW Tech is a technology community founded by Joel Karr in 2016. It connects software engineers, engineering leaders, and technologists passionate about innovation and software craft.
+
+- LinkedIn Group: https://www.linkedin.com/groups/15863032/
+
+## Links
+
+- [Full details](https://joelkarr.com/llms-full.txt): Extended reference for AI systems
+- [Website](https://joelkarr.com): Joel Karr's personal website
+- [Sitemap](https://joelkarr.com/sitemap.xml): Site map
