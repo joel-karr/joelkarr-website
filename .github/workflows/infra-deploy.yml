@@ -1,0 +1,71 @@
+name: Provision Azure Infrastructure
+
+# Runs when Bicep templates change on main, or manually via workflow_dispatch.
+# Required repository secrets:
+#   AZURE_CLIENT_ID       - App registration client ID (for OIDC login)
+#   AZURE_TENANT_ID       - Azure tenant ID
+#   AZURE_SUBSCRIPTION_ID - Azure subscription ID
+#   GH_ADMIN_TOKEN        - (optional) GitHub PAT with secrets:write scope;
+#                           when present the SWA deployment token is written to
+#                           AZURE_STATIC_WEB_APPS_API_TOKEN automatically.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'infra/**'
+
+env:
+  RESOURCE_GROUP: rg-joelkarr-com
+  SWA_NAME: swa-joelkarr-com
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  provision:
+    runs-on: ubuntu-latest
+    name: Provision Azure Resources
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Deploy Bicep Infrastructure
+        uses: azure/arm-deploy@v2
+        with:
+          scope: subscription
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          region: eastus2
+          template: ./infra/main.bicep
+          parameters: ./infra/parameters.json
+          deploymentName: ${{ env.SWA_NAME }}-${{ github.run_number }}
+          failOnStdErr: false
+
+      - name: Retrieve and store SWA deployment token
+        env:
+          GH_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
+        run: |
+          DEPLOYMENT_TOKEN=$(az staticwebapp secrets list \
+            --name "${{ env.SWA_NAME }}" \
+            --resource-group "${{ env.RESOURCE_GROUP }}" \
+            --query "properties.apiKey" \
+            --output tsv)
+          echo "::add-mask::$DEPLOYMENT_TOKEN"
+          if [ -n "$GH_TOKEN" ]; then
+            echo "$DEPLOYMENT_TOKEN" | gh secret set AZURE_STATIC_WEB_APPS_API_TOKEN \
+              --repo "${{ github.repository }}"
+            echo "✅ AZURE_STATIC_WEB_APPS_API_TOKEN has been updated in repository secrets."
+          else
+            echo "⚠️  GH_ADMIN_TOKEN is not configured."
+            echo "    Manually add the SWA deployment token as the AZURE_STATIC_WEB_APPS_API_TOKEN repository secret."
+            echo "    Retrieve it any time with:"
+            echo "    az staticwebapp secrets list --name \"${{ env.SWA_NAME }}\" --resource-group \"${{ env.RESOURCE_GROUP }}\" --query 'properties.apiKey' --output tsv"
+          fi
