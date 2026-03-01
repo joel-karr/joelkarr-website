@@ -34,12 +34,20 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Deploy Bicep
+      - name: Deploy Resource Group
         uses: azure/arm-deploy@v2
         with:
           scope: subscription
           region: eastus2
-          template: infra/main.bicep
+          template: infra/resource-group.bicep
+
+      - name: Deploy Static Web App
+        uses: azure/arm-deploy@v2
+        with:
+          resourceGroupName: rg-joelkarr-com
+          template: infra/static-web-app.bicep
           parameters: >
+            name=swa-joelkarr-com
+            location=eastus2
             sku=${{ inputs.sku || 'Free' }}
             customDomainName=
