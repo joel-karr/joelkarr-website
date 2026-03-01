@@ -35,7 +35,9 @@ resource staticWebApp 'Microsoft.Web/staticSites@2023-12-01' = {
 resource customDomain 'Microsoft.Web/staticSites/customDomains@2023-12-01' = if (!empty(customDomainName)) {
   parent: staticWebApp
   name: customDomainName
-  properties: {}
+  properties: {
+    validationMethod: 'dns-txt-token'
+  }
 }
 
 output defaultHostname string = staticWebApp.properties.defaultHostname

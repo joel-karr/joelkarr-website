@@ -42,3 +42,4 @@ jobs:
           template: infra/main.bicep
           parameters: >
             sku=${{ inputs.sku || 'Free' }}
+            customDomainName=
