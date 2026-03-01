@@ -14,7 +14,7 @@ param staticWebAppName string = 'swa-joelkarr-com'
 param sku string = 'Free'
 
 @description('Custom domain (e.g., joelkarr.com). Leave empty to skip custom domain setup.')
-param customDomainName string = 'joelkarr.com'
+param customDomainName string = ''
 
 // Resource Group
 resource rg 'Microsoft.Resources/resourceGroups@2024-03-01' = {
