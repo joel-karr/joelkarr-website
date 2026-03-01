@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { scrollToSection } from '@/utils/scrollToSection';
 import logo from '@/assets/b7a220cbd0224ff4115d16c15bd8c8d837d3cccd.png';
@@ -16,6 +17,10 @@ export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const isHomePage = location.pathname === '/';
 
   // Throttled scroll handler for nav background
   useEffect(() => {
@@ -33,8 +38,13 @@ export function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Active section tracking via IntersectionObserver
+  // Active section tracking via IntersectionObserver (only on homepage)
   useEffect(() => {
+    if (!isHomePage) {
+      setActiveSection('');
+      return;
+    }
+
     const observers: IntersectionObserver[] = [];
 
     NAV_SECTIONS.forEach((id) => {
@@ -54,7 +64,7 @@ export function Navigation() {
     });
 
     return () => observers.forEach((o) => o.disconnect());
-  }, []);
+  }, [isHomePage]);
 
   // Close mobile menu on resize to desktop
   useEffect(() => {
@@ -67,10 +77,27 @@ export function Navigation() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handleNavClick = useCallback((id: string) => {
-    scrollToSection(id);
-    setIsMobileMenuOpen(false);
-  }, []);
+  const handleNavClick = useCallback(
+    (id: string) => {
+      setIsMobileMenuOpen(false);
+      if (isHomePage) {
+        scrollToSection(id);
+      } else {
+        navigate(`/#${id}`);
+      }
+    },
+    [isHomePage, navigate]
+  );
+
+  const handleLogoClick = useCallback(() => {
+    if (isHomePage) {
+      scrollToSection('hero');
+    } else {
+      navigate('/');
+    }
+  }, [isHomePage, navigate]);
+
+  const isBlogActive = location.pathname.startsWith('/blog');
 
   return (
     <nav
@@ -81,7 +108,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <button
-            onClick={() => scrollToSection('hero')}
+            onClick={handleLogoClick}
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <img src={logo} alt="Joel Karr Logo" className="h-10 w-auto" />
@@ -103,6 +130,16 @@ export function Navigation() {
                 {NAV_LABELS[id]}
               </button>
             ))}
+            <Link
+              to="/blog"
+              className={`transition-colors ${
+                isBlogActive
+                  ? 'text-gray-900 font-semibold'
+                  : 'text-gray-700 hover:text-gray-900'
+              }`}
+            >
+              Blog
+            </Link>
             <button
               onClick={() => handleNavClick('connect')}
               className="bg-gray-900 text-white px-6 py-2.5 rounded-lg hover:bg-gray-800 transition-colors"
@@ -145,6 +182,17 @@ export function Navigation() {
                   {NAV_LABELS[id]}
                 </button>
               ))}
+              <Link
+                to="/blog"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`text-left py-2 transition-colors ${
+                  isBlogActive
+                    ? 'text-gray-900 font-semibold'
+                    : 'text-gray-700 hover:text-gray-900'
+                }`}
+              >
+                Blog
+              </Link>
               <button
                 onClick={() => handleNavClick('connect')}
                 className="text-left bg-gray-900 text-white px-6 py-2.5 rounded-lg hover:bg-gray-800 transition-colors"

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joel Karr Blog</title>
+    <link>https://joelkarr.com/blog</link>
+    <description>Insights on AI-era software development, deliberate engineering practices, and building software that lasts.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2026 13:27:21 GMT</lastBuildDate>
+    <atom:link href="https://joelkarr.com/rss.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>joel@joelkarr.com (Joel Karr)</managingEditor>
+    <webMaster>joel@joelkarr.com (Joel Karr)</webMaster>
+    <image>
+      <url>https://joelkarr.com/og-image.png</url>
+      <title>Joel Karr Blog</title>
+      <link>https://joelkarr.com/blog</link>
+    </image>
+    <item>
+      <title>Why Big Bang Platform Rewrites Fail (And What to Do Instead)</title>
+      <link>https://joelkarr.com/blog/why-big-bang-rewrites-fail</link>
+      <guid isPermaLink="true">https://joelkarr.com/blog/why-big-bang-rewrites-fail</guid>
+      <description>Big bang platform rewrites fail because they introduce massive, unmanageable risk. Here&apos;s a proven incremental approach drawn from 20+ years of engineering leadership.</description>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+      <author>Joel Karr</author>
+      <category>engineering-leadership</category>
+      <category>platform-modernization</category>
+      <category>software-craft</category>
+    </item>
+    <item>
+      <title>What Is Deliberate Practice in Software Engineering?</title>
+      <link>https://joelkarr.com/blog/deliberate-practice-in-software-engineering</link>
+      <guid isPermaLink="true">https://joelkarr.com/blog/deliberate-practice-in-software-engineering</guid>
+      <description>Deliberate practice in software engineering is the discipline of mastering your craft by drilling one small detail at a time. Here&apos;s how it differs from just writing more code.</description>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
+      <author>Joel Karr</author>
+      <category>software-craft</category>
+      <category>deliberate-practice</category>
+      <category>engineering-leadership</category>
+    </item>
+  </channel>
+</rss>
