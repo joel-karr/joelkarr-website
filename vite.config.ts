@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import blogContent from './src/plugins/vite-plugin-blog-content'
+import blogStaticAssets from './src/plugins/vite-plugin-blog-static-assets'
 
 export default defineConfig({
   plugins: [
@@ -9,6 +11,8 @@ export default defineConfig({
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
+    blogContent(),
+    blogStaticAssets(),
   ],
   resolve: {
     alias: {

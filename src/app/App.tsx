@@ -1,13 +1,13 @@
+import { Routes, Route } from 'react-router';
 import { Navigation } from './components/Navigation';
-import { Hero } from './components/Hero';
-import { BookSection } from './components/BookSection';
-import { ARCSection } from './components/ARCSection';
-import { AboutSection } from './components/AboutSection';
-import { GWTechSection } from './components/GWTechSection';
-import { ConnectSection } from './components/ConnectSection';
 import { Footer } from './components/Footer';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { BackToTop } from './components/BackToTop';
+import { Analytics } from './components/Analytics';
+import { HomePage } from './pages/HomePage';
+import { BlogListPage } from './pages/BlogListPage';
+import { BlogPostPage } from './pages/BlogPostPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 export default function App() {
   return (
@@ -20,14 +20,13 @@ export default function App() {
           Skip to content
         </a>
         <Navigation />
-        <main id="main-content">
-          <Hero />
-          <BookSection />
-          <ARCSection />
-          <AboutSection />
-          <GWTechSection />
-          <ConnectSection />
-        </main>
+        <Analytics />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<BlogListPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
         <Footer />
         <BackToTop />
       </div>

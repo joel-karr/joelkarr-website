@@ -37,8 +37,16 @@ GW Tech is a technology community founded by Joel Karr in 2016. It connects soft
 
 - LinkedIn Group: https://www.linkedin.com/groups/15863032/
 
+
+## Blog Posts
+
+- [Why Big Bang Platform Rewrites Fail (And What to Do Instead)](https://joelkarr.com/blog/why-big-bang-rewrites-fail): Big bang platform rewrites fail because they introduce massive, unmanageable risk. Here's a proven incremental approach drawn from 20+ years of engineering leadership.
+- [What Is Deliberate Practice in Software Engineering?](https://joelkarr.com/blog/deliberate-practice-in-software-engineering): Deliberate practice in software engineering is the discipline of mastering your craft by drilling one small detail at a time. Here's how it differs from just writing more code.
+
 ## Links
 
 - [Full details](https://joelkarr.com/llms-full.txt): Extended reference for AI systems
 - [Website](https://joelkarr.com): Joel Karr's personal website
+- [Blog](https://joelkarr.com/blog): Blog posts on software engineering
+- [RSS Feed](https://joelkarr.com/rss.xml): RSS feed for blog updates
 - [Sitemap](https://joelkarr.com/sitemap.xml): Site map

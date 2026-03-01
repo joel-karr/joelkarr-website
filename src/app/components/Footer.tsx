@@ -1,7 +1,20 @@
+import { Link, useLocation, useNavigate } from 'react-router';
 import logo from '@/assets/3f5e9f8d1d265121df8f64ff7c560376bf2fde12.png';
 import { scrollToSection } from '@/utils/scrollToSection';
 
 export function Footer() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === '/';
+
+  const handleSectionClick = (id: string) => {
+    if (isHomePage) {
+      scrollToSection(id);
+    } else {
+      navigate(`/#${id}`);
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -29,15 +42,19 @@ export function Footer() {
               Email
             </a>
             <span className="hidden md:block">&bull;</span>
+            <Link to="/blog" className="hover:text-white transition-colors">
+              Blog
+            </Link>
+            <span className="hidden md:block">&bull;</span>
             <button
-              onClick={() => scrollToSection('arc')}
+              onClick={() => handleSectionClick('arc')}
               className="hover:text-white transition-colors"
             >
               ARC
             </button>
             <span className="hidden md:block">&bull;</span>
             <button
-              onClick={() => scrollToSection('gwtech')}
+              onClick={() => handleSectionClick('gwtech')}
               className="hover:text-white transition-colors"
             >
               GW Tech
