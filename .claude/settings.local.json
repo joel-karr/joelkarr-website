@@ -16,7 +16,11 @@
       "WebFetch(domain:joelkarr.com)",
       "Bash(head -15 /c/Users/JoelKarr/source/joelkarr.com/src/content/blog/*.md)",
       "Bash(grep -rn \"publicDir\\\\|outDir\" /c/Users/JoelKarr/source/joelkarr.com/*.config.* /c/Users/JoelKarr/source/joelkarr.com/*.json 2>/dev/null | head -20)",
-      "Bash(grep \"StaticRouter\" node_modules/react-router/dist/development/dom-export.d.ts 2>/dev/null; grep \"createStaticHandler\\\\|createStaticRouter\\\\|StaticRouter\" node_modules/react-router/dist/development/*.d.ts 2>/dev/null | head -10)"
+      "Bash(grep \"StaticRouter\" node_modules/react-router/dist/development/dom-export.d.ts 2>/dev/null; grep \"createStaticHandler\\\\|createStaticRouter\\\\|StaticRouter\" node_modules/react-router/dist/development/*.d.ts 2>/dev/null | head -10)",
+      "Bash(grep -o '<div id=\"root\">.\\\\{0,200\\\\}' dist/index.html | head -1)",
+      "Bash(grep -o '<div id=\"root\">.\\\\{0,200\\\\}' dist/blog/dont-think-when-you-code/index.html | head -1)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)"
     ]
   }
 }

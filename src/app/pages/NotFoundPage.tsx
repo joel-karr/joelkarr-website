@@ -15,6 +15,7 @@ interface AssistantMessage {
   role: 'assistant' | 'user';
   text: string;
   suggestions?: RouteItem[];
+  source?: 'azure-openai' | 'fallback' | 'local';
 }
 
 export function NotFoundPage() {
@@ -125,7 +126,8 @@ export function NotFoundPage() {
     if (greeting) {
       return {
         role: 'assistant',
-        text: 'Hey. Tell me what you were trying to find and I will suggest the best page links.'
+        text: 'Hey. Tell me what you were trying to find and I will suggest the best page links.',
+        source: 'local'
       };
     }
 
@@ -135,14 +137,16 @@ export function NotFoundPage() {
       return {
         role: 'assistant',
         text: 'I could not find a strong match yet. Try keywords like "AI software lifecycle", "SDLC", "book chapters", "ARC", or "big bang rewrites".',
-        suggestions: routeCatalog.filter((r) => r.path === '/blog' || r.path === '/#arc' || r.path === '/#book')
+        suggestions: routeCatalog.filter((r) => r.path === '/blog' || r.path === '/#arc' || r.path === '/#book'),
+        source: 'local'
       };
     }
 
     return {
       role: 'assistant',
       text: 'These look like your best matches. Open one and I can keep narrowing if needed.',
-      suggestions
+      suggestions,
+      source: 'local'
     };
   };
 
@@ -179,6 +183,7 @@ export function NotFoundPage() {
         role: 'assistant',
         text: data.message,
         suggestions: safeSuggestions.length > 0 ? safeSuggestions : createAssistantReply(rawInput).suggestions,
+        source: data.source === 'azure-openai' ? 'azure-openai' : 'fallback',
       };
     } catch {
       return createAssistantReply(rawInput);
@@ -336,6 +341,11 @@ export function NotFoundPage() {
                   }`}
                 >
                   <p className="text-sm text-slate-100">{message.text}</p>
+                  {message.role === 'assistant' && message.source && (
+                    <p className="mt-2 text-[11px] uppercase tracking-wide text-slate-400">
+                      mode: {message.source === 'azure-openai' ? 'azure openai' : message.source}
+                    </p>
+                  )}
                   {message.suggestions && message.suggestions.length > 0 && (
                     <div className="mt-3 flex flex-wrap gap-2">
                       {message.suggestions.map((suggestion) => (
