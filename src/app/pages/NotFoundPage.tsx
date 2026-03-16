@@ -26,7 +26,7 @@ export function NotFoundPage() {
   const [messages, setMessages] = useState<AssistantMessage[]>([
     {
       role: 'assistant',
-      text: 'I can help you find the right page. Ask for topics like ARC, book chapters, AI software lifecycle, SDLC, or a blog post topic.'
+      text: 'Looks like that route doesn\'t exist. What were you trying to find? I know my way around this site pretty well.'
     }
   ]);
 
@@ -126,7 +126,7 @@ export function NotFoundPage() {
     if (greeting) {
       return {
         role: 'assistant',
-        text: 'Hey. Tell me what you were trying to find and I will suggest the best page links.',
+        text: 'Hey! What are you looking for? I can point you in the right direction.',
         source: 'local'
       };
     }
@@ -136,7 +136,7 @@ export function NotFoundPage() {
     if (suggestions.length === 0) {
       return {
         role: 'assistant',
-        text: 'I could not find a strong match yet. Try keywords like "AI software lifecycle", "SDLC", "book chapters", "ARC", or "big bang rewrites".',
+        text: 'Hmm, nothing jumped out for that one. Maybe try something like "ARC", "book", "deliberate practice", or "big bang rewrites"?',
         suggestions: routeCatalog.filter((r) => r.path === '/blog' || r.path === '/#arc' || r.path === '/#book'),
         source: 'local'
       };
@@ -144,7 +144,7 @@ export function NotFoundPage() {
 
     return {
       role: 'assistant',
-      text: 'These look like your best matches. Open one and I can keep narrowing if needed.',
+      text: 'Here\'s what I found — any of these what you had in mind?',
       suggestions,
       source: 'local'
     };
