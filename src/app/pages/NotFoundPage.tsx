@@ -256,8 +256,8 @@ export function NotFoundPage() {
                 Route Not Found
               </h1>
               <p className="mt-4 text-lg text-slate-200 max-w-2xl">
-                Your request reached the server, but this path is not mapped. The goats are still
-                wrangling packets. Try one of the known good routes below.
+                Your request reached the server, but this path is not mapped. The GOAT route assistant
+                is ready to help you find the right destination below.
               </p>
 
               <div className="mt-8 rounded-2xl bg-slate-950/70 border border-cyan-400/20 p-5 font-mono text-sm text-cyan-100">
@@ -304,7 +304,7 @@ export function NotFoundPage() {
                 />
               </div>
 
-              <p className="relative mt-6 text-xl font-medium text-white">The Goat Wrangler</p>
+              <p className="relative mt-6 text-xl font-medium text-white">The GOAT Assistant</p>
               <p className="relative mt-2 text-sm text-slate-300 max-w-xs">
                 A pathfinder for lost developers, broken links, and ambitious routes.
               </p>

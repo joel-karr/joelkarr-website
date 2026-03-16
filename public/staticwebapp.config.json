@@ -1,4 +1,11 @@
 {
+  "routes": [
+    { "route": "/robots.txt" },
+    { "route": "/sitemap.xml" },
+    { "route": "/llms.txt" },
+    { "route": "/llms-full.txt" },
+    { "route": "/rss.xml" }
+  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["/api/*", "/assets/*", "/*.txt", "/*.xml", "/*.png", "/*.ico"]

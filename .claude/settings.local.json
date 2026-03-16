@@ -15,7 +15,8 @@
       "Bash(git push origin main)",
       "WebFetch(domain:joelkarr.com)",
       "Bash(head -15 /c/Users/JoelKarr/source/joelkarr.com/src/content/blog/*.md)",
-      "Bash(grep -rn \"publicDir\\\\|outDir\" /c/Users/JoelKarr/source/joelkarr.com/*.config.* /c/Users/JoelKarr/source/joelkarr.com/*.json 2>/dev/null | head -20)"
+      "Bash(grep -rn \"publicDir\\\\|outDir\" /c/Users/JoelKarr/source/joelkarr.com/*.config.* /c/Users/JoelKarr/source/joelkarr.com/*.json 2>/dev/null | head -20)",
+      "Bash(grep \"StaticRouter\" node_modules/react-router/dist/development/dom-export.d.ts 2>/dev/null; grep \"createStaticHandler\\\\|createStaticRouter\\\\|StaticRouter\" node_modules/react-router/dist/development/*.d.ts 2>/dev/null | head -10)"
     ]
   }
 }
