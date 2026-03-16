@@ -146,10 +146,15 @@ Joel Karr is a CTO with over 20 years of experience in software engineering. He 
 
 A book about the craft of software engineering in the AI era, coming Summer 2026. Drawn from 20+ years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice.
 
-The book is organized into three parts:
-- Part 1: The Craft of Software Engineering
-- Part 2: Leading Engineering Teams
-- Part 3: The Path to Engineering Leadership
+Chapter highlights include:
+- Chapter 1: Flow state for software engineers and deep focus
+- Chapter 2: Deliberate practice to become a better software engineer
+- Chapter 3: Task templates that speed up the software development lifecycle (SDLC)
+- Chapter 4: Mental models for architecture decisions and legacy code
+- Chapter 5: Better problem framing before estimates and delivery planning
+- Chapter 9: Making engineering decisions durable under pressure
+- Chapter 10: Feedback systems that improve software team velocity
+- Chapter 16: AI prompt templates for the AI software lifecycle and modern SDLC
 
 ## ARC Methodology
 

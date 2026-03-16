@@ -1,40 +1,55 @@
-import { BookOpen, Brain, Users, TrendingUp } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function BookSection() {
-  const sections = [
+  const chapterHighlights = [
     {
-      icon: Brain,
-      title: "The Craft of Software Engineering",
-      topics: [
-        "Finding flow states as a software engineer",
-        "Deliberate practice in software engineering",
-        "Pattern recognition and reducing cognitive load",
-        "Using analogies as engineering decision frameworks",
-        "How AI transforms the craft of writing software"
-      ]
+      chapter: 'Chapter 1',
+      title: 'Flow State for Software Engineers',
+      summary:
+        'How top engineers enter flow more often by matching challenge to skill and training pattern recognition.'
     },
     {
-      icon: Users,
-      title: "Leading Engineering Teams",
-      topics: [
-        "The illusion of alignment in engineering organizations",
-        "Making architectural decisions durable",
-        "The feedback paradox and psychological safety",
-        "Performing under pressure during production outages",
-        "Spreading ideas by showing, not telling"
-      ]
+      chapter: 'Chapter 2',
+      title: 'Deliberate Practice That Improves Coding Faster',
+      summary:
+        'A practical training-journal method to become a better software engineer with targeted, repeatable skill reps.'
     },
     {
-      icon: TrendingUp,
-      title: "The Path to Engineering Leadership",
-      topics: [
-        "Reducing uncertainty in software projects",
-        "Why big bang platform rewrites fail",
-        "Turning around struggling engineering teams",
-        "Protecting focus in chaotic engineering environments",
-        "Engineering leadership as a deliberate practice"
-      ]
+      chapter: 'Chapter 3',
+      title: 'Task Templates for a Faster SDLC',
+      summary:
+        'Use reusable implementation playbooks to reduce rework, improve estimates, and speed up the software development lifecycle.'
+    },
+    {
+      chapter: 'Chapter 4',
+      title: 'Mental Models for Legacy Code and Architecture',
+      summary:
+        'Make stronger architecture decisions under uncertainty by scanning for patterns instead of rethinking every line.'
+    },
+    {
+      chapter: 'Chapter 5',
+      title: 'Framing Problems Before Estimating Delivery',
+      summary:
+        'Improve SDLC planning by surfacing hidden assumptions early so teams avoid expensive late-stage changes.'
+    },
+    {
+      chapter: 'Chapter 9',
+      title: 'How Teams Make Decisions That Stay Decided',
+      summary:
+        'Prevent decision churn by tying choices to assumptions and only reopening when new information appears.'
+    },
+    {
+      chapter: 'Chapter 10',
+      title: 'Feedback Systems That Improve Engineering Velocity',
+      summary:
+        'Build psychological safety with high standards so code reviews drive learning, quality, and faster execution.'
+    },
+    {
+      chapter: 'Chapter 16',
+      title: 'AI in the Software Lifecycle and Modern SDLC',
+      summary:
+        'Translate proven task templates into AI prompt templates to improve output quality across the AI software lifecycle.'
     }
   ];
 
@@ -66,6 +81,11 @@ export function BookSection() {
               to building software and leading engineers.
             </p>
 
+            <p className="text-base text-gray-600 mb-8">
+              These chapter highlights focus on practical systems for AI software development lifecycle
+              execution, modern SDLC planning, and becoming a better software engineer.
+            </p>
+
             <button
               disabled
               className="bg-gray-400 text-white px-8 py-4 rounded-lg inline-flex items-center gap-2 cursor-not-allowed"
@@ -88,27 +108,27 @@ export function BookSection() {
           </div>
         </div>
 
-        {/* Book Sections */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {sections.map((section, index) => {
-            const Icon = section.icon;
+        {/* Chapter Highlights */}
+        <div className="mb-6">
+          <h3 className="text-2xl text-gray-900">Chapter Highlights (8 of 16)</h3>
+          <p className="text-gray-600 mt-2">
+            Built for engineers focused on AI-driven software lifecycle execution, stronger SDLC practices,
+            and long-term software engineering growth.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+          {chapterHighlights.map((chapter, index) => {
             return (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-all">
-                <div className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
-                  <Icon size={24} className="text-white" aria-hidden="true" />
+              <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all">
+                <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-sm" aria-hidden="true">{index + 1}</span>
                 </div>
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-sm uppercase tracking-wider text-gray-400">Part {index + 1}</span>
+                  <span className="text-xs uppercase tracking-wider text-gray-400">{chapter.chapter}</span>
                 </div>
-                <h3 className="text-xl mb-4 text-gray-900">{section.title}</h3>
-                <ul className="space-y-3">
-                  {section.topics.map((topic, topicIndex) => (
-                    <li key={topicIndex} className="text-gray-600 flex items-start gap-2">
-                      <span className="text-gray-400 mt-1" aria-hidden="true">&bull;</span>
-                      <span>{topic}</span>
-                    </li>
-                  ))}
-                </ul>
+                <h4 className="text-lg mb-3 text-gray-900">{chapter.title}</h4>
+                <p className="text-gray-600">{chapter.summary}</p>
               </div>
             );
           })}
