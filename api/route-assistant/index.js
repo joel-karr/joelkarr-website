@@ -74,15 +74,15 @@ function normalizeCatalog(routeCatalog) {
 }
 
 async function callAzureOpenAI({ query, currentPath, routeCatalog }) {
+  const deployment = 'gpt-4o-mini';
   const endpoint = process.env.AZURE_OPENAI_ENDPOINT;
   const apiKey = process.env.AZURE_OPENAI_API_KEY;
-  const deployment = process.env.AZURE_OPENAI_DEPLOYMENT;
   const apiVersion = process.env.AZURE_OPENAI_API_VERSION || '2024-10-21';
 
-  if (!endpoint || !apiKey || !deployment) {
+  if (!endpoint || !apiKey) {
     return {
       ok: false,
-      error: 'Azure OpenAI is not configured on the server.',
+      error: 'Azure OpenAI endpoint/key are not configured on the server.',
     };
   }
 
