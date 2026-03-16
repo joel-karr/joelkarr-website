@@ -1,9 +1,239 @@
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { ArrowLeft, Home, BookOpen, RefreshCw } from 'lucide-react';
 import logo from '@/assets/b7a220cbd0224ff4115d16c15bd8c8d837d3cccd.png';
+import { getAllPostMeta } from '@/lib/blog';
+
+interface RouteItem {
+  title: string;
+  description: string;
+  path: string;
+  keywords: string[];
+}
+
+interface AssistantMessage {
+  role: 'assistant' | 'user';
+  text: string;
+  suggestions?: RouteItem[];
+}
 
 export function NotFoundPage() {
   const location = useLocation();
+  const [query, setQuery] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const hasSuggestedForPath = useRef(false);
+  const [messages, setMessages] = useState<AssistantMessage[]>([
+    {
+      role: 'assistant',
+      text: 'I can help you find the right page. Ask for topics like ARC, book chapters, AI software lifecycle, SDLC, or a blog post topic.'
+    }
+  ]);
+
+  const routeCatalog = useMemo<RouteItem[]>(() => {
+    const staticRoutes: RouteItem[] = [
+      {
+        title: 'Home',
+        description: 'Main landing page with Joel Karr overview and navigation.',
+        path: '/',
+        keywords: ['home', 'landing', 'overview', 'joel']
+      },
+      {
+        title: 'The Book Section',
+        description: 'Chapter highlights from Don\'t Think When You Code and software engineering themes.',
+        path: '/#book',
+        keywords: ['book', 'chapters', 'dont think when you code', 'engineering craft']
+      },
+      {
+        title: 'ARC Methodology Section',
+        description: 'AI-era ARC framework for modern software delivery.',
+        path: '/#arc',
+        keywords: ['arc', 'methodology', 'framework', 'ai delivery', 'software lifecycle', 'sdlc']
+      },
+      {
+        title: 'About Section',
+        description: 'Joel\'s background and engineering journey.',
+        path: '/#about',
+        keywords: ['about', 'bio', 'background', 'story']
+      },
+      {
+        title: 'GW Tech Section',
+        description: 'GW Tech community details and links.',
+        path: '/#gwtech',
+        keywords: ['gw', 'gw tech', 'community', 'events']
+      },
+      {
+        title: 'Connect Section',
+        description: 'Ways to connect, follow, and get updates.',
+        path: '/#connect',
+        keywords: ['connect', 'contact', 'linkedin', 'email']
+      },
+      {
+        title: 'Blog Index',
+        description: 'All published articles on software engineering and AI.',
+        path: '/blog',
+        keywords: ['blog', 'posts', 'articles', 'engineering blog']
+      }
+    ];
+
+    const postRoutes = getAllPostMeta().map((post) => ({
+      title: post.title,
+      description: post.description,
+      path: `/blog/${post.slug}`,
+      keywords: [post.slug, ...post.tags]
+    }));
+
+    return [...staticRoutes, ...postRoutes];
+  }, []);
+
+  const scoreRoute = (item: RouteItem, terms: string[]): number => {
+    const title = item.title.toLowerCase();
+    const description = item.description.toLowerCase();
+    const path = item.path.toLowerCase();
+    const keywords = item.keywords.join(' ').toLowerCase();
+
+    let score = 0;
+    for (const term of terms) {
+      if (title.includes(term)) score += 6;
+      if (keywords.includes(term)) score += 4;
+      if (description.includes(term)) score += 2;
+      if (path.includes(term)) score += 3;
+    }
+    return score;
+  };
+
+  const findSuggestions = (rawInput: string): RouteItem[] => {
+    const normalized = rawInput.toLowerCase().trim();
+    if (!normalized) return [];
+
+    const terms = normalized
+      .split(/[^a-z0-9]+/)
+      .filter((t) => t.length > 1);
+
+    if (terms.length === 0) return [];
+
+    return routeCatalog
+      .map((item) => ({ item, score: scoreRoute(item, terms) }))
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map(({ item }) => item);
+  };
+
+  const createAssistantReply = (rawInput: string): AssistantMessage => {
+    const normalized = rawInput.toLowerCase().trim();
+    const greeting = /^(hi|hello|hey|yo)\b/.test(normalized);
+    if (greeting) {
+      return {
+        role: 'assistant',
+        text: 'Hey. Tell me what you were trying to find and I will suggest the best page links.'
+      };
+    }
+
+    const suggestions = findSuggestions(rawInput);
+
+    if (suggestions.length === 0) {
+      return {
+        role: 'assistant',
+        text: 'I could not find a strong match yet. Try keywords like "AI software lifecycle", "SDLC", "book chapters", "ARC", or "big bang rewrites".',
+        suggestions: routeCatalog.filter((r) => r.path === '/blog' || r.path === '/#arc' || r.path === '/#book')
+      };
+    }
+
+    return {
+      role: 'assistant',
+      text: 'These look like your best matches. Open one and I can keep narrowing if needed.',
+      suggestions
+    };
+  };
+
+  const fetchAssistantReply = async (rawInput: string): Promise<AssistantMessage> => {
+    try {
+      const response = await fetch('/api/route-assistant', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          query: rawInput,
+          currentPath: location.pathname,
+          routeCatalog,
+        }),
+      });
+
+      if (!response.ok) {
+        return createAssistantReply(rawInput);
+      }
+
+      const data = await response.json();
+      if (!data || typeof data.message !== 'string') {
+        return createAssistantReply(rawInput);
+      }
+
+      const safeSuggestions: RouteItem[] = Array.isArray(data.suggestions)
+        ? data.suggestions
+            .filter((s: RouteItem) => typeof s.path === 'string' && typeof s.title === 'string')
+            .slice(0, 3)
+        : [];
+
+      return {
+        role: 'assistant',
+        text: data.message,
+        suggestions: safeSuggestions.length > 0 ? safeSuggestions : createAssistantReply(rawInput).suggestions,
+      };
+    } catch {
+      return createAssistantReply(rawInput);
+    }
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const trimmed = query.trim();
+    if (!trimmed || isLoading) return;
+
+    setMessages((prev) => [...prev, { role: 'user', text: trimmed }]);
+    setQuery('');
+    setIsLoading(true);
+
+    const reply = await fetchAssistantReply(trimmed);
+    setMessages((prev) => [...prev, reply]);
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    hasSuggestedForPath.current = false;
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (hasSuggestedForPath.current) return;
+    const pathHint = location.pathname.replace(/^\//, '').replace(/[-_/]+/g, ' ').trim();
+    if (!pathHint) return;
+
+    hasSuggestedForPath.current = true;
+
+    let cancelled = false;
+    const run = async () => {
+      const reply = await fetchAssistantReply(pathHint);
+      if (cancelled) return;
+
+      setMessages((prev) => {
+        if (prev.length > 1) return prev;
+        return [
+          ...prev,
+          {
+            role: 'assistant',
+            text: `I also analyzed this broken path: "${location.pathname}". ${reply.text}`,
+            suggestions: reply.suggestions
+          }
+        ];
+      });
+    };
+
+    run();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [location.pathname, routeCatalog]);
 
   return (
     <main
@@ -87,6 +317,60 @@ export function NotFoundPage() {
                 Retry Request
               </button>
             </aside>
+          </div>
+
+          <div className="border-t border-white/10 bg-black/15 p-6 sm:p-8">
+            <h2 className="text-lg sm:text-xl text-white">GW Route Assistant</h2>
+            <p className="text-sm text-slate-300 mt-1">
+              Ask what you are looking for and get suggested pages from site content.
+            </p>
+
+            <div className="mt-4 rounded-2xl border border-white/10 bg-slate-950/60 p-4 max-h-80 overflow-y-auto space-y-3">
+              {messages.map((message, index) => (
+                <div
+                  key={index}
+                  className={`rounded-xl px-4 py-3 ${
+                    message.role === 'assistant'
+                      ? 'bg-white/5 border border-white/10'
+                      : 'bg-cyan-400/15 border border-cyan-300/30'
+                  }`}
+                >
+                  <p className="text-sm text-slate-100">{message.text}</p>
+                  {message.suggestions && message.suggestions.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {message.suggestions.map((suggestion) => (
+                        <Link
+                          key={`${index}-${suggestion.path}`}
+                          to={suggestion.path}
+                          className="text-xs rounded-lg bg-white/10 hover:bg-white/20 text-cyan-100 border border-cyan-200/25 px-3 py-1.5 transition-colors"
+                        >
+                          {suggestion.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <form onSubmit={handleSubmit} className="mt-4 flex flex-col sm:flex-row gap-3">
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Try: AI software lifecycle, SDLC, book chapters, ARC..."
+                className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder:text-slate-400 focus:outline-none focus:border-cyan-300"
+                aria-label="Ask GW Route Assistant"
+                disabled={isLoading}
+              />
+              <button
+                type="submit"
+                className="rounded-xl bg-cyan-400 text-slate-950 px-5 py-3 hover:bg-cyan-300 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+                disabled={isLoading}
+              >
+                {isLoading ? 'Thinking...' : 'Ask'}
+              </button>
+            </form>
           </div>
         </div>
       </div>

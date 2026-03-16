@@ -12,7 +12,9 @@
       "Bash(git push)",
       "Bash(node -e \":*)",
       "Bash(git add index.html package.json package-lock.json vite.config.ts staticwebapp.config.json src/main.tsx src/app/App.tsx src/app/components/Navigation.tsx src/app/components/Footer.tsx src/app/components/Analytics.tsx src/app/components/SEOHead.tsx src/app/pages/ src/content/ src/lib/ src/plugins/ src/styles/index.css src/styles/tailwind.css dist/)",
-      "Bash(git push origin main)"
+      "Bash(git push origin main)",
+      "WebFetch(domain:joelkarr.com)",
+      "Bash(head -15 /c/Users/JoelKarr/source/joelkarr.com/src/content/blog/*.md)"
     ]
   }
 }

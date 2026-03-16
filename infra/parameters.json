@@ -16,6 +16,24 @@
     },
     "customDomainName": {
       "value": ""
+    },
+    "deployOpenAi": {
+      "value": true
+    },
+    "openAiAccountName": {
+      "value": "aoai-joelkarr-com"
+    },
+    "openAiDeploymentName": {
+      "value": "gpt-4o-mini"
+    },
+    "openAiModelName": {
+      "value": "gpt-4o-mini"
+    },
+    "openAiModelVersion": {
+      "value": "2024-07-18"
+    },
+    "openAiModelCapacity": {
+      "value": 10
     }
   }
 }
