@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 
-const SITE_URL = 'https://joelkarr.com';
+const SITE_URL = 'https://www.joelkarr.com';
 
 interface PostMeta {
   title: string;
@@ -140,7 +140,7 @@ Joel Karr is a CTO with over 20 years of experience in software engineering. He 
 
 - Email: joel@joelkarr.com
 - LinkedIn: https://linkedin.com/in/joelkarr
-- Website: https://joelkarr.com
+- Website: https://www.joelkarr.com
 
 ## Book: Don't Think When You Code
 
@@ -235,7 +235,7 @@ Joel believes the future of AI-driven software development is not about typing f
 
 - Email: joel@joelkarr.com
 - LinkedIn: https://linkedin.com/in/joelkarr
-- Website: https://joelkarr.com
+- Website: https://www.joelkarr.com
 
 ## Book: Don't Think When You Code
 

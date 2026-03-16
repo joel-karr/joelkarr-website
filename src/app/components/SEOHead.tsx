@@ -14,7 +14,7 @@ interface SEOHeadProps {
   jsonLd?: Record<string, unknown>;
 }
 
-const SITE_URL = 'https://joelkarr.com';
+const SITE_URL = 'https://www.joelkarr.com';
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
 export function SEOHead({

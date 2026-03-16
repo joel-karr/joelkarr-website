@@ -114,18 +114,18 @@ export function BlogListPage() {
     name: 'Joel Karr Blog',
     description:
       'Insights on AI-era software development, deliberate engineering practices, and building software that lasts.',
-    url: 'https://joelkarr.com/blog',
+    url: 'https://www.joelkarr.com/blog',
     author: {
       '@type': 'Person',
       name: 'Joel Karr',
-      url: 'https://joelkarr.com',
+      url: 'https://www.joelkarr.com',
     },
     blogPost: allPosts.map((post) => ({
       '@type': 'BlogPosting',
       headline: post.title,
       description: post.description,
       datePublished: post.date,
-      url: `https://joelkarr.com/blog/${post.slug}`,
+      url: `https://www.joelkarr.com/blog/${post.slug}`,
       author: {
         '@type': 'Person',
         name: post.author,

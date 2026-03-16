@@ -121,7 +121,7 @@ function TableOfContents({ content }: { content: string }) {
 // --- Share Links ---
 function ShareLinks({ title, slug }: { title: string; slug: string }) {
   const [copied, setCopied] = useState(false);
-  const url = `https://joelkarr.com/blog/${slug}`;
+  const url = `https://www.joelkarr.com/blog/${slug}`;
 
   const copyLink = useCallback(async () => {
     try {
@@ -270,22 +270,22 @@ export function BlogPostPage() {
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    image: post.image || 'https://joelkarr.com/og-image.png',
+    image: post.image || 'https://www.joelkarr.com/og-image.png',
     datePublished: post.date,
     dateModified: post.date,
     author: {
       '@type': 'Person',
       name: post.author,
-      url: 'https://joelkarr.com',
+      url: 'https://www.joelkarr.com',
     },
     publisher: {
       '@type': 'Person',
       name: 'Joel Karr',
-      url: 'https://joelkarr.com',
+      url: 'https://www.joelkarr.com',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://joelkarr.com/blog/${post.slug}`,
+      '@id': `https://www.joelkarr.com/blog/${post.slug}`,
     },
     keywords: post.tags.join(', '),
     wordCount: post.content.split(/\s+/).length,
