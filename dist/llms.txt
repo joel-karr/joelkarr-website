@@ -14,10 +14,15 @@ Joel Karr is a CTO with over 20 years of experience in software engineering. He 
 
 A book about the craft of software engineering in the AI era, coming Summer 2026. Drawn from 20+ years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice.
 
-The book is organized into three parts:
-- Part 1: The Craft of Software Engineering
-- Part 2: Leading Engineering Teams
-- Part 3: The Path to Engineering Leadership
+Chapter highlights include:
+- Chapter 1: Flow state for software engineers and deep focus
+- Chapter 2: Deliberate practice to become a better software engineer
+- Chapter 3: Task templates that speed up the software development lifecycle (SDLC)
+- Chapter 4: Mental models for architecture decisions and legacy code
+- Chapter 5: Better problem framing before estimates and delivery planning
+- Chapter 9: Making engineering decisions durable under pressure
+- Chapter 10: Feedback systems that improve software team velocity
+- Chapter 16: AI prompt templates for the AI software lifecycle and modern SDLC
 
 ## ARC Methodology
 
@@ -40,6 +45,7 @@ GW Tech is a technology community founded by Joel Karr in 2016. It connects soft
 
 ## Blog Posts
 
+- [How to Get Better at Software Engineering: A Practical System for Faster Growth](https://joelkarr.com/blog/how-to-get-better-at-software-engineering): A practical framework to become a better software engineer faster: deliberate practice, task templates, mental models, and flow state training you can use this week.
 - [Don't Think When You Code: How Deliberate Practice Builds Engineering Intuition](https://joelkarr.com/blog/dont-think-when-you-code): The best software engineers don't think their way through every decision — they've trained their subconscious to recognize patterns. Here's how deliberate practice, task templates, and mental models turn conscious effort into engineering intuition.
 - [Why Big Bang Platform Rewrites Fail (And What to Do Instead)](https://joelkarr.com/blog/why-big-bang-rewrites-fail): Big bang platform rewrites fail because they introduce massive, unmanageable risk. Here's a proven incremental approach drawn from 20+ years of engineering leadership.
 - [What Is Deliberate Practice in Software Engineering?](https://joelkarr.com/blog/deliberate-practice-in-software-engineering): Deliberate practice in software engineering is the discipline of mastering your craft by drilling one small detail at a time. Here's how it differs from just writing more code.

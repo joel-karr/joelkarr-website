@@ -5,7 +5,7 @@
     <link>https://joelkarr.com/blog</link>
     <description>Insights on AI-era software development, deliberate engineering practices, and building software that lasts.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 01:14:34 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 01:21:12 GMT</lastBuildDate>
     <atom:link href="https://joelkarr.com/rss.xml" rel="self" type="application/rss+xml" />
     <managingEditor>joel@joelkarr.com (Joel Karr)</managingEditor>
     <webMaster>joel@joelkarr.com (Joel Karr)</webMaster>
@@ -14,6 +14,19 @@
       <title>Joel Karr Blog</title>
       <link>https://joelkarr.com/blog</link>
     </image>
+    <item>
+      <title>How to Get Better at Software Engineering: A Practical System for Faster Growth</title>
+      <link>https://joelkarr.com/blog/how-to-get-better-at-software-engineering</link>
+      <guid isPermaLink="true">https://joelkarr.com/blog/how-to-get-better-at-software-engineering</guid>
+      <description>A practical framework to become a better software engineer faster: deliberate practice, task templates, mental models, and flow state training you can use this week.</description>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+      <author>Joel Karr</author>
+      <category>software-engineering</category>
+      <category>career-growth</category>
+      <category>deliberate-practice</category>
+      <category>engineering-leadership</category>
+      <category>developer-productivity</category>
+    </item>
     <item>
       <title>Don&apos;t Think When You Code: How Deliberate Practice Builds Engineering Intuition</title>
       <link>https://joelkarr.com/blog/dont-think-when-you-code</link>

@@ -15,7 +15,7 @@ import {
   Check,
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
-import { getPostBySlug, getRelatedPosts, formatDate } from '@/lib/blog';
+import { findClosestPostBySlug, getPostBySlug, getRelatedPosts, formatDate } from '@/lib/blog';
 import type { BlogPost } from '@/lib/blogTypes';
 
 // --- Reading Progress Bar ---
@@ -228,10 +228,21 @@ export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const post: BlogPost | undefined = slug ? getPostBySlug(slug) : undefined;
+  const suggestedPost: BlogPost | undefined = !post && slug ? findClosestPostBySlug(slug) : undefined;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [slug]);
+
+  useEffect(() => {
+    if (!post && suggestedPost && slug && suggestedPost.slug !== slug) {
+      navigate(`/blog/${suggestedPost.slug}`, { replace: true });
+    }
+  }, [post, suggestedPost, slug, navigate]);
+
+  if (!post && suggestedPost) {
+    return null;
+  }
 
   if (!post) {
     return (

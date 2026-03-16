@@ -24,7 +24,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogListPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/blog/:slug/*" element={<BlogPostPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
