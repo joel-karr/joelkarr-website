@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
-import { ArrowLeft, Home, BookOpen, RefreshCw } from 'lucide-react';
+import { Home, BookOpen, Send } from 'lucide-react';
 import logo from '@/assets/b7a220cbd0224ff4115d16c15bd8c8d837d3cccd.png';
 import { getAllPostMeta } from '@/lib/blog';
 
@@ -240,147 +240,128 @@ export function NotFoundPage() {
     };
   }, [location.pathname, routeCatalog]);
 
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
   return (
     <main
       id="main-content"
-      className="min-h-screen bg-[radial-gradient(ellipse_at_top,_#1f2937,_#111827_45%,_#020617_90%)] text-white"
+      className="min-h-screen bg-[radial-gradient(ellipse_at_top,_#1f2937,_#111827_45%,_#020617_90%)] text-white flex items-center justify-center"
     >
-      <div className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-        <div className="rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-sm shadow-2xl overflow-hidden">
-          <div className="flex items-center gap-2 border-b border-white/10 px-5 py-3 bg-black/20">
-            <span className="h-2.5 w-2.5 rounded-full bg-red-400" aria-hidden="true" />
-            <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" aria-hidden="true" />
-            <span className="h-2.5 w-2.5 rounded-full bg-green-400" aria-hidden="true" />
-            <p className="ml-3 text-xs uppercase tracking-[0.2em] text-white/70">GW Debug Console</p>
+      <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:py-16">
+        <div className="rounded-2xl border border-white/10 bg-slate-950/80 backdrop-blur-sm shadow-2xl overflow-hidden font-mono">
+          {/* Terminal title bar */}
+          <div className="flex items-center gap-2 border-b border-white/10 px-4 py-2.5 bg-black/40">
+            <span className="h-3 w-3 rounded-full bg-red-500" aria-hidden="true" />
+            <span className="h-3 w-3 rounded-full bg-yellow-500" aria-hidden="true" />
+            <span className="h-3 w-3 rounded-full bg-green-500" aria-hidden="true" />
+            <span className="ml-auto text-xs text-white/40">404 &mdash; {location.pathname}</span>
           </div>
 
-          <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8 p-6 sm:p-10">
-            <section>
-              <p className="text-xs uppercase tracking-[0.25em] text-cyan-300 mb-3">Error 404</p>
-              <h1 className="text-4xl sm:text-6xl leading-tight font-semibold">
-                Route Not Found
+          {/* Logo header - Claude CLI style */}
+          <div className="flex items-center gap-4 px-6 pt-6 pb-4 border-b border-white/[0.06]">
+            <img
+              src={logo}
+              alt="Goat Wrangle logo"
+              className="h-12 w-auto drop-shadow-lg"
+            />
+            <div>
+              <h1 className="text-lg font-semibold text-white tracking-tight" style={{ fontFamily: 'inherit' }}>
+                Goat Wrangle
               </h1>
-              <p className="mt-4 text-lg text-slate-200 max-w-2xl">
-                Your request reached the server, but this path is not mapped. The GOAT route assistant
-                is ready to help you find the right destination below.
-              </p>
-
-              <div className="mt-8 rounded-2xl bg-slate-950/70 border border-cyan-400/20 p-5 font-mono text-sm text-cyan-100">
-                <p className="text-cyan-300">$ curl -I {location.pathname || '/'}</p>
-                <p className="mt-2 text-rose-300">HTTP/1.1 404 Not Found</p>
-                <p className="mt-1 text-slate-300">x-gw-trace: route-index-miss</p>
-                <p className="mt-1 text-slate-300">hint: check slug, path, or navigation source</p>
-              </div>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  to="/"
-                  className="inline-flex items-center gap-2 rounded-xl bg-cyan-400 text-slate-950 px-5 py-3 hover:bg-cyan-300 transition-colors"
-                >
-                  <Home size={18} aria-hidden="true" />
-                  Home
-                </Link>
-                <Link
-                  to="/blog"
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-5 py-3 hover:bg-white/10 transition-colors"
-                >
-                  <BookOpen size={18} aria-hidden="true" />
-                  Blog Index
-                </Link>
-                <Link
-                  to="/"
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-5 py-3 hover:bg-white/10 transition-colors"
-                >
-                  <ArrowLeft size={18} aria-hidden="true" />
-                  Back to Safe Route
-                </Link>
-              </div>
-            </section>
-
-            <aside className="relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/0 p-6 sm:p-8 flex flex-col items-center justify-center text-center">
-              <div className="absolute inset-0 bg-[linear-gradient(transparent_24px,rgba(255,255,255,0.06)_25px),linear-gradient(90deg,transparent_24px,rgba(255,255,255,0.06)_25px)] bg-[size:25px_25px] opacity-20 rounded-2xl" aria-hidden="true" />
-
-              <div className="relative">
-                <div className="absolute -inset-6 rounded-full bg-cyan-400/20 blur-2xl" aria-hidden="true" />
-                <img
-                  src={logo}
-                  alt="GW logo"
-                  className="relative h-36 sm:h-44 w-auto drop-shadow-2xl"
-                />
-              </div>
-
-              <p className="relative mt-6 text-xl font-medium text-white">The GOAT Assistant</p>
-              <p className="relative mt-2 text-sm text-slate-300 max-w-xs">
-                A pathfinder for lost developers, broken links, and ambitious routes.
-              </p>
-
-              <button
-                onClick={() => window.location.reload()}
-                className="relative mt-6 inline-flex items-center gap-2 rounded-xl border border-cyan-300/40 bg-cyan-400/10 px-4 py-2.5 text-cyan-100 hover:bg-cyan-400/20 transition-colors"
-              >
-                <RefreshCw size={16} aria-hidden="true" />
-                Retry Request
-              </button>
-            </aside>
+              <p className="text-xs text-slate-400">route assistant v1.0</p>
+            </div>
           </div>
 
-          <div className="border-t border-white/10 bg-black/15 p-6 sm:p-8">
-            <h2 className="text-lg sm:text-xl text-white">GW Route Assistant</h2>
-            <p className="text-sm text-slate-300 mt-1">
-              Ask what you are looking for and get suggested pages from site content.
-            </p>
-
-            <div className="mt-4 rounded-2xl border border-white/10 bg-slate-950/60 p-4 max-h-80 overflow-y-auto space-y-3">
-              {messages.map((message, index) => (
-                <div
-                  key={index}
-                  className={`rounded-xl px-4 py-3 ${
-                    message.role === 'assistant'
-                      ? 'bg-white/5 border border-white/10'
-                      : 'bg-cyan-400/15 border border-cyan-300/30'
-                  }`}
-                >
-                  <p className="text-sm text-slate-100">{message.text}</p>
-                  {message.role === 'assistant' && message.source && (
-                    <p className="mt-2 text-[11px] uppercase tracking-wide text-slate-400">
-                      mode: {message.source === 'azure-openai' ? 'azure openai' : message.source}
-                    </p>
-                  )}
-                  {message.suggestions && message.suggestions.length > 0 && (
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {message.suggestions.map((suggestion) => (
-                        <Link
-                          key={`${index}-${suggestion.path}`}
-                          to={suggestion.path}
-                          className="text-xs rounded-lg bg-white/10 hover:bg-white/20 text-cyan-100 border border-cyan-200/25 px-3 py-1.5 transition-colors"
-                        >
-                          {suggestion.title}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
+          {/* Terminal body - curl output + chat */}
+          <div className="px-6 pt-5 pb-2 max-h-[60vh] overflow-y-auto space-y-4 text-sm">
+            {/* Initial curl output */}
+            <div className="text-slate-400">
+              <p className="text-cyan-300">$ curl -I {location.pathname || '/'}</p>
+              <p className="mt-1 text-rose-400">HTTP/1.1 404 Not Found</p>
+              <p className="text-slate-500">x-gw-trace: route-index-miss</p>
             </div>
 
-            <form onSubmit={handleSubmit} className="mt-4 flex flex-col sm:flex-row gap-3">
-              <input
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Try: AI software lifecycle, SDLC, book chapters, ARC..."
-                className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder:text-slate-400 focus:outline-none focus:border-cyan-300"
-                aria-label="Ask GW Route Assistant"
-                disabled={isLoading}
-              />
-              <button
-                type="submit"
-                className="rounded-xl bg-cyan-400 text-slate-950 px-5 py-3 hover:bg-cyan-300 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
-                disabled={isLoading}
-              >
-                {isLoading ? 'Thinking...' : 'Ask'}
-              </button>
-            </form>
+            <div className="border-t border-white/[0.06]" />
+
+            {/* Chat messages */}
+            {messages.map((message, index) => (
+              <div key={index} className="space-y-1">
+                {message.role === 'user' ? (
+                  <p className="text-cyan-300">
+                    <span className="text-cyan-500">&gt; </span>
+                    {message.text}
+                  </p>
+                ) : (
+                  <div>
+                    <p className="text-slate-200 leading-relaxed">{message.text}</p>
+                    {message.source && (
+                      <p className="text-[11px] text-slate-600 mt-1">
+                        [{message.source === 'azure-openai' ? 'azure openai' : message.source}]
+                      </p>
+                    )}
+                    {message.suggestions && message.suggestions.length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {message.suggestions.map((suggestion) => (
+                          <Link
+                            key={`${index}-${suggestion.path}`}
+                            to={suggestion.path}
+                            className="text-xs rounded-md bg-cyan-400/10 hover:bg-cyan-400/20 text-cyan-300 border border-cyan-400/20 px-2.5 py-1 transition-colors"
+                          >
+                            {suggestion.title}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            {isLoading && (
+              <p className="text-slate-500 animate-pulse">thinking...</p>
+            )}
+
+            <div ref={messagesEndRef} />
+          </div>
+
+          {/* Input prompt - CLI style */}
+          <form onSubmit={handleSubmit} className="border-t border-white/[0.06] px-6 py-4 flex items-center gap-3">
+            <span className="text-cyan-500 text-sm select-none">&gt;</span>
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Ask about a page, topic, or route..."
+              className="flex-1 bg-transparent text-sm text-white placeholder:text-slate-600 focus:outline-none caret-cyan-400"
+              aria-label="Ask Goat Wrangle route assistant"
+              disabled={isLoading}
+              autoFocus
+            />
+            <button
+              type="submit"
+              className="text-cyan-500 hover:text-cyan-300 transition-colors disabled:opacity-30"
+              disabled={isLoading || !query.trim()}
+              aria-label="Send"
+            >
+              <Send size={16} />
+            </button>
+          </form>
+
+          {/* Quick nav footer */}
+          <div className="border-t border-white/[0.06] px-6 py-3 flex items-center gap-4 text-xs text-slate-500">
+            <Link to="/" className="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors">
+              <Home size={12} aria-hidden="true" />
+              home
+            </Link>
+            <Link to="/blog" className="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors">
+              <BookOpen size={12} aria-hidden="true" />
+              blog
+            </Link>
+            <span className="ml-auto text-slate-600">type a question or click a link</span>
           </div>
         </div>
       </div>
