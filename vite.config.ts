@@ -5,14 +5,15 @@ import react from '@vitejs/plugin-react'
 import blogContent from './src/plugins/vite-plugin-blog-content'
 import blogStaticAssets from './src/plugins/vite-plugin-blog-static-assets'
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
     blogContent(),
-    blogStaticAssets(),
+    // Only generate static assets (sitemap, rss, llms) during client build
+    ...(!isSsrBuild ? [blogStaticAssets()] : []),
   ],
   resolve: {
     alias: {
@@ -28,4 +29,9 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
-})
+
+  ssr: {
+    // Bundle these CJS packages into the SSR output so Node can import them as ESM
+    noExternal: isSsrBuild ? true : undefined,
+  },
+}))

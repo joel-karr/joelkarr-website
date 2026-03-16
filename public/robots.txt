@@ -35,4 +35,8 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
+# Google AI crawlers
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://joelkarr.com/sitemap.xml

@@ -103,3 +103,519 @@ GW Tech is a technology community founded by Joel Karr in 2016. It connects soft
 ### Join GW Tech
 
 - LinkedIn Group: https://www.linkedin.com/groups/15863032/
+
+
+## Blog Posts
+
+### How to Get Better at Software Engineering: A Practical System for Faster Growth
+
+- URL: https://joelkarr.com/blog/how-to-get-better-at-software-engineering
+- Date: 2026-03-15
+- Tags: software-engineering, career-growth, deliberate-practice, engineering-leadership, developer-productivity
+
+If you are searching for how to get better at software engineering, you are probably not looking for another list of generic tips.
+
+You want a repeatable system that helps you:
+
+- grow faster without burning out
+- make better technical decisions under pressure
+- feel less stuck when codebases get messy
+- become the engineer teams trust with high-stakes work
+
+After decades building software and leading engineering teams, I have seen one pattern over and over:
+
+The engineers who improve fastest are not always the smartest in the room. They are the ones with a training system.
+
+This article gives you that system.
+
+## Why Most Engineers Plateau (Even With Years of Experience)
+
+Many developers assume more years automatically means more skill.
+
+But there is a major difference between:
+
+- doing software work repeatedly
+- deliberately training your decision-making and pattern recognition
+
+Without deliberate practice, experience can become repetition.
+
+You ship features, attend standups, fix bugs, and stay busy, but your intuition does not compound as quickly as it could.
+
+If your goal is software engineering career growth, you need a process that turns daily work into skill reps.
+
+## The Four-Part System to Become a Better Software Engineer
+
+This framework is built for real teams, real deadlines, and real production pressure.
+
+### 1. Capture Hesitations in Real Time
+
+Your best training data is in your normal workday.
+
+Any time you hesitate, write it down quickly:
+
+- "Not sure if this endpoint belongs in this service"
+- "Had to look up async error handling again"
+- "Copied this pattern but cannot explain why it is right"
+
+These micro-hesitations are not weaknesses. They are your map for targeted improvement.
+
+### 2. Group Gaps Into Focus Areas
+
+At the end of each week, cluster your notes:
+
+- API design
+- distributed systems
+- testing strategy
+- database modeling
+- architecture communication
+
+Now you are not chasing random topics. You are building a personal curriculum based on your actual bottlenecks.
+
+### 3. Build Deliberate Practice Reps
+
+Pick one focus area and create small exercises that are slightly uncomfortable.
+
+Examples:
+
+- refactor one service to improve dependency boundaries
+- rewrite one handler with clearer error paths and tests
+- design two alternate solutions, then justify tradeoffs in writing
+
+This is where growth accelerates. Not from passive learning, but from repeated, focused reps.
+
+### 4. Keep a Decision Journal
+
+High-level engineering is mostly decision quality under uncertainty.
+
+For important technical decisions, capture:
+
+- context
+- options considered
+- decision made
+- assumptions behind the decision
+
+Review monthly.
+
+Your goal is not "Was the outcome perfect?"
+
+Your goal is "Was the decision sound given what we knew then?"
+
+That is how engineering judgment compounds.
+
+## How to Enter Flow State More Often While Coding
+
+Many developers search for productivity hacks when what they really want is flow.
+
+Flow state is when:
+
+- concentration deepens
+- time compresses
+- decisions feel intuitive
+- work becomes energizing instead of draining
+
+Flow is not random. It is engineered.
+
+You increase flow probability when work has:
+
+- clear goals
+- immediate feedback
+- challenge matched to your current skill
+
+This is another reason deliberate practice matters. The stronger your pattern library, the easier it is to hit flow on complex problems.
+
+## Use Task Templates to Move Faster and Reduce Rework
+
+Top teams do not reinvent every feature from scratch.
+
+They use task templates: reusable implementation playbooks for common problem types.
+
+A strong template includes:
+
+- technical stack
+- default architecture choices
+- key implementation steps
+- validation and testing checkpoints
+- known risk areas
+
+Why this matters for software engineering productivity:
+
+- fewer repeated debates
+- better estimation quality
+- less context switching
+- faster onboarding for new engineers
+
+Creativity does not disappear. It gets focused where it creates leverage.
+
+## Decision-Making Under Pressure: The Hidden Career Multiplier
+
+In high-pressure moments, some engineers freeze while others move.
+
+The difference is often not intelligence. It is cognitive load management.
+
+Pressure players do four things well:
+
+- bound unknowns instead of chasing perfect certainty
+- constrain scope to the next useful action
+- use runbooks and defaults to save working memory
+- help unfreeze teammates by simplifying the decision surface
+
+If you want to become a senior engineer faster, train this skill deliberately. It multiplies everything else.
+
+## A 30-Day Plan to Improve Faster
+
+If you want a practical starting point, use this plan:
+
+Week 1
+
+- start a hesitation log
+- record at least one hesitation each workday
+
+Week 2
+
+- group hesitations into 2 to 3 focus areas
+- pick one area for deliberate practice
+
+Week 3
+
+- run 3 focused practice reps
+- document one meaningful technical decision with assumptions
+
+Week 4
+
+- create one reusable task template from recent work
+- review your decision journal and extract 2 rules of thumb
+
+Do this for 30 days and you will already notice sharper decisions, clearer communication, and faster execution.
+
+## Why This Works for Long-Term Software Engineering Career Growth
+
+Most career advice focuses on surface-level tactics:
+
+- learn one more framework
+- optimize your resume
+- post more on social media
+
+Those can help.
+
+But long-term leverage comes from internal systems:
+
+- pattern recognition
+- decision quality
+- predictable execution
+- ability to reduce uncertainty for others
+
+Those are the traits that turn strong individual contributors into technical leaders.
+
+## Final Thought
+
+If coding has started to feel heavier than it used to, it does not always mean you need a new job, a new stack, or a new title.
+
+Often, you need a better training system.
+
+Build one that captures hesitation, converts it into focused reps, and strengthens your judgment over time.
+
+That is how you get better at software engineering, faster and with less wasted effort.
+
+If this was useful, explore more practical frameworks on this site, and share this article with an engineer who wants to level up this year.
+
+## FAQ: How to Get Better at Software Engineering
+
+### How long does it take to become a better software engineer?
+
+You can see measurable improvements in 30 days if you practice deliberately. Major compounding usually becomes obvious after 3 to 6 months of consistent reps.
+
+### What is the fastest way to improve coding skills?
+
+The fastest path is targeted practice on your real gaps, not random tutorials. Capture hesitations, group them, and run deliberate reps weekly.
+
+### Do senior engineers still need deliberate practice?
+
+Yes. Senior growth depends even more on decision quality, architecture clarity, communication, and reducing team uncertainty.
+
+### Can AI tools replace this process?
+
+No. AI can accelerate implementation, but it cannot replace engineering judgment. The better your mental models, the more value you get from AI.
+
+---
+
+### Don't Think When You Code: How Deliberate Practice Builds Engineering Intuition
+
+- URL: https://joelkarr.com/blog/dont-think-when-you-code
+- Date: 2026-03-11
+- Tags: software-craft, deliberate-practice, engineering-leadership
+
+The title sounds counterintuitive. Engineers are paid to think. But after twenty years of building software and leading engineering teams, I've learned that the best engineers don't consciously think through every decision — they've trained their subconscious to recognize patterns so well that the right answer arrives before they realize they were thinking.
+
+This is the core idea behind my book, *Don't Think When You Code*. It's not about being reckless. It's about building the cognitive foundation that makes flow states accessible and decision-making instinctive.
+
+## The Origin of Flow in Software Engineering
+
+Every software engineer has an origin story — the first time code made everything else disappear. For me, it was a basement in central Illinois in 1995. I was ten years old, sneaking downstairs after bedtime to an IBM 486 running Windows 3.1 and a book called *QuickBASIC Made Easy*.
+
+The first lessons were frustrating. I wanted to build something I cared about, not what the book told me to build. But curiosity kept me going. When I finally created a framework for drawing large block letters on screen using variable offsets inside a 10-by-10 grid, something clicked. What felt like thirty minutes was really four or five hours. I had built something that worked, and I felt amazing.
+
+Psychologists had been studying this state for decades. They called it **flow**. Mihaly Csikszentmihalyi discovered that people across wildly different activities — chess, rock climbing, surgery — entered the same state of deep engagement when the challenge matched their skill level. His research revealed a surprising paradox: people were most likely to experience flow at work, yet they said they preferred leisure. They were having their best experiences during challenging work and didn't even recognize it.
+
+Flow has the same key elements every time: complete concentration, clear goals, a balance between challenge and skill. Self-consciousness disappears. Hours feel like minutes. The activity becomes rewarding in itself.
+
+For engineers, this explains why the same coding work sometimes feels effortless and energizing, and other times feels like a grind. The question is: how do you systematically build the competence that makes flow accessible?
+
+## Why Experience Alone Isn't Enough
+
+Most engineers confuse experience with practice. Ten years of writing code is not ten years of deliberate practice — it's often one year of learning repeated ten times. The difference is intentionality.
+
+I learned this the hard way at a digital marketing firm in Chicago. After building a few instant-win sweepstakes websites, each new site became harder to care about. The brands changed, the prizes changed, but the code was the same. By every measure that mattered to the company, I was doing well. But doing well and getting better aren't the same thing.
+
+The hours weren't working because there's a difference between doing the work and training to get better at it. The answer came not from a software engineering book, but from a wrestling practice room.
+
+## The Training Journal Technique
+
+At the University of Illinois, I competed on the wrestling team while studying computer engineering. In a sport as brutally honest as wrestling, effort alone wasn't enough. I wasn't improving fast enough.
+
+An assistant coach named Adam Tirapelle, who'd placed third, then second, then won an NCAA championship, gave me advice that changed everything: **find one detail to improve each day and write it down**.
+
+I picked one skill — an outside single-leg takedown — and wrote down one small adjustment every day:
+
+- Move my left foot two inches farther forward
+- Push my elbow slightly more inside
+- Keep my eyes focused a few inches higher
+
+After months of drilling tiny corrections, the takedown that had once felt impossible became automatic. Years later, I applied the same process to software engineering. Every time I got stuck, I wrote it down:
+
+- When to use public vs. private variables
+- How to set up dependency injection
+- How to name variables cleanly
+
+Each item became a deliberate practice rep. Over time, the journal turned information into subconscious understanding.
+
+## When Deliberate Practice Saved a Project
+
+The real test came during one of the most difficult projects in my career. I'd joined a company rebuilding its entire e-commerce platform. Cyber Monday had crashed the site two years running, costing hundreds of thousands in lost revenue. Our team of fifteen was rewriting everything from scratch using tools none of us had professionally used before: Domain-Driven Design, Test-Driven Development, and Azure cloud.
+
+Every night after work, I trained. I built side projects, created exercises, and wrote down every concept I had to search for. I was building a personal library of patterns in my subconscious.
+
+When the search engine rewrite fell behind with two weeks until launch, I volunteered to help. I spent two full days just reading the legacy code — thousands of lines of Classic ASP — without writing anything new. By the weekend, I started coding.
+
+After an hour, something clicked. The entire problem laid out in my mind like a blueprint. The patterns I had seen aligned with the skills I had drilled into muscle memory. When I finally looked up, it was 3 AM. I should have been exhausted. Instead, I felt completely energized.
+
+That flow state wasn't accidental. It was the direct result of months of deliberate practice that had built the cognitive tools I needed to handle that level of complexity.
+
+## Task Templates: Stop Reinventing What Already Works
+
+Deliberate practice builds skills. The next layer is eliminating unnecessary decisions. Most teams treat every feature like it's never been done before. SQL vs. Postgres gets debated until someone suggests MongoDB. The same architectural decisions get relitigated, the same technology trade-offs get researched, and solutions to previously solved problems get reinvented from scratch.
+
+I started calling the solution **task templates** — pre-built approaches for common problems that eliminate repeated decision-making. A task template groups smaller well-known tasks together. The team discusses what API endpoints they need or how to structure objects without getting overwhelmed by every small detail.
+
+This approach saved a project with SEC regulatory deadlines. Consultants had estimated ten months of work. My co-lead Richie and I broke the solution into known approaches and delivered in six months — not by working longer hours, but by separating learning from building. We learned during planning, then executed during building.
+
+A junior engineer knows one way to solve a problem. A mid-level engineer knows many ways. An expert knows which one to use. Task templates don't make you less creative. They free you to be creative when it actually matters.
+
+## Mental Models: Don't Use Your Eyes to See Code
+
+Task templates reduce decisions. Mental models train your decision-making itself.
+
+One of the most impressive engineers I've worked with was ready to give up on a fifteen-year-old codebase — thousands of lines of patched-together code. His team was in "violent agreement" that the only option was a rewrite, but there wasn't enough time.
+
+I told them: **don't use your eyes to see code**. Instead of reading every line, let your subconscious scan for patterns. The code started to tell a story. Different patterns made it clear which parts had been written in different time periods. Some had been partially refactored, while others remained intact like mini time capsules.
+
+This is what Annie Duke, the poker champion turned decision scientist, calls the "menu strategy." When you've narrowed to two viable options, stop deliberating and pick one. Your trained subconscious has already done the hard work. The deliberation is the illusion.
+
+But trusting your subconscious only works if you keep training it. The industry changes, your tools change, and instincts built three years ago start producing outdated answers.
+
+## How to Start Building Your System
+
+The practical framework from the book comes down to four habits:
+
+### 1. Capture Your Hesitations
+
+Notice when you pause — when you search for something you feel like you should know, when you copy code without understanding it, when a teammate asks why you made a choice and you struggle to explain. Write it down.
+
+### 2. Group What You Find
+
+After a few days, patterns emerge. Group them into focus areas: dependency management, async programming, API design. These become your personal curriculum built from your actual gaps.
+
+### 3. Create Your Own Exercises
+
+Pick one focus area and create exercises that push you slightly past what's comfortable. If the exercise feels easy, it's not teaching you anything.
+
+### 4. Keep a Decision Journal
+
+When you make a technical choice, write down the context and your reasoning. Review it later — not whether the outcome was good, but whether the decision was good given what you knew. Over time, patterns emerge that become your decision shortcuts.
+
+## The Path Forward
+
+The title *Don't Think When You Code* isn't about being thoughtless. It's about doing the hard work of deliberate practice so that when pressure is high and the stakes matter most, your brain already knows the answer.
+
+Flow isn't something you find by accident. It's something you build access to through systematic training. The engineers who thrive aren't the ones who think the hardest in the moment. They're the ones who trained the hardest before the moment arrived.
+
+## FAQ
+
+### How much time should I spend on deliberate practice?
+
+Even 30 minutes a few times a week produces measurable growth over a year. The key is consistency and intentionality. Start with one habit — capturing hesitations or keeping a decision journal — and build from there.
+
+### Can AI tools replace the need for deliberate practice?
+
+No. AI tools amplify existing judgment but cannot create it. When an AI generates 500 lines of code in seconds, your value lies in knowing whether those lines solve the right problem and recognizing architectural patterns that will cause pain later. These are judgment skills built through deliberate practice.
+
+### Is this only relevant for junior engineers?
+
+Deliberate practice is especially important for senior engineers and leaders. The skills that matter most at senior levels — architectural judgment, organizational awareness, technical communication — require the most intentional development.
+
+### What's the difference between task templates and design patterns?
+
+Design patterns describe solutions to recurring software design problems. Task templates are broader — they capture the full set of decisions, technology choices, and implementation steps for delivering a type of feature. They're your team's playbook for execution, not just architecture.
+
+---
+
+### Why Big Bang Platform Rewrites Fail (And What to Do Instead)
+
+- URL: https://joelkarr.com/blog/why-big-bang-rewrites-fail
+- Date: 2026-03-01
+- Tags: engineering-leadership, platform-modernization, software-craft
+
+Big bang platform rewrites fail because they introduce massive, unmanageable risk into software projects. After leading engineering teams through multiple full-scale platform modernizations, I've learned that the answer is almost never "rewrite everything from scratch." The incremental approach wins every time.
+
+## Why Do Engineering Teams Want to Rewrite Everything?
+
+The appeal is understandable. Your legacy system has years of accumulated technical debt. Every change feels like defusing a bomb. New engineers take months to become productive. The technology stack is two generations behind.
+
+So someone proposes: "Let's just start fresh." It sounds clean. It sounds exciting. But it almost always fails.
+
+## What Makes Big Bang Rewrites So Dangerous?
+
+The fundamental problem is **uncertainty**. When you rewrite an entire platform simultaneously, you're making every architectural decision at once, with incomplete information, and you won't know if those decisions were correct until you try to launch — months or years later.
+
+Here's what typically goes wrong:
+
+- **The old system keeps evolving.** While your team builds the new platform, the business keeps shipping features on the old one. By the time the rewrite is "done," it's already behind.
+- **Scope creep is inevitable.** Every rewrite starts with "just rebuild what we have." It never stays that way. Teams add improvements, rethink flows, and expand scope until the project doubles in size.
+- **Integration is the hardest part.** The rewrite team builds components in isolation, but the real complexity lives in how those components interact. Integration testing at the end surfaces problems that would have been caught earlier in an incremental approach.
+- **Team morale collapses.** Rewrites that stretch beyond their timeline — and they always do — drain teams. Engineers lose motivation when they can't see the finish line.
+
+## What Is the Incremental Alternative?
+
+Instead of replacing everything at once, modernize your platform piece by piece using the **Strangler Fig Pattern**:
+
+1. **Identify the highest-value, lowest-risk boundary** in your system. This is usually a well-defined API endpoint, a self-contained feature, or a data pipeline with clear inputs and outputs.
+2. **Build the replacement behind a feature flag.** Run both old and new code paths simultaneously. Compare outputs. Build confidence.
+3. **Migrate traffic gradually.** Start with 1% of users. Monitor error rates, performance, and business metrics. Ramp up when confident.
+4. **Repeat.** Each successful migration builds institutional knowledge and reduces risk for the next one.
+
+This approach delivers value continuously. Each piece you modernize makes the next piece easier. And you can stop at any point with a working system.
+
+## How Does This Relate to the ARC Methodology?
+
+The ARC methodology embeds this incremental thinking directly into how engineering teams work. ARC's focus on **Opportunities** (defining success metrics before work begins) and **Ventures** (parallel work streams owned end-to-end by individual engineers) naturally prevents the "all-at-once" thinking that makes rewrites dangerous.
+
+When you structure work around outcomes rather than output, you never end up in a situation where your team has spent six months building something that might not work.
+
+## Frequently Asked Questions
+
+### How long does an incremental platform modernization take?
+
+It depends on the system's size and complexity, but most incremental modernizations show measurable results within 3-6 months. The key difference is that you're delivering value from week one, rather than betting everything on a launch date 18 months away.
+
+### When is a full rewrite actually justified?
+
+A full rewrite may be justified when the codebase is genuinely small enough to rebuild in weeks (not months), when the team has no institutional knowledge of the old system, or when the technology stack is so obsolete that no incremental migration path exists. These situations are rare.
+
+### What's the biggest mistake teams make during platform modernizations?
+
+Underestimating the complexity of data migration. The code is often the easy part. Moving data — especially live, stateful data with complex relationships — is where most modernization projects stumble. Plan for data migration first, not last.
+
+### How do you maintain team morale during a long modernization?
+
+Ship frequently. The incremental approach naturally creates a cadence of visible wins. Each migrated component is a celebration. Each reduced error rate is proof of progress. Teams stay motivated when they can see their work making a difference.
+
+---
+
+### What Is Deliberate Practice in Software Engineering?
+
+- URL: https://joelkarr.com/blog/deliberate-practice-in-software-engineering
+- Date: 2026-02-25
+- Tags: software-craft, deliberate-practice, engineering-leadership
+
+Deliberate practice in software engineering is the discipline of mastering your craft by drilling one small detail at a time. It is not about typing faster, writing more lines of code, or working longer hours. It is about building pattern recognition, reducing cognitive load, and solving the right problems with clarity and discipline.
+
+## How Is Deliberate Practice Different from Just Writing More Code?
+
+Most engineers confuse experience with practice. Ten years of writing code is not ten years of deliberate practice — it is often one year of learning repeated ten times. The difference is intentionality.
+
+Deliberate practice requires three things:
+
+1. **A specific skill to isolate.** Not "get better at coding" but "get faster at identifying the right abstraction boundary in a service decomposition."
+2. **Immediate feedback.** You need to know whether your approach worked — not weeks later in production, but within the session.
+3. **Discomfort.** If the practice feels easy, you are not growing. Deliberate practice lives at the edge of your current ability.
+
+## Why Does Deliberate Practice Matter in the AI Era?
+
+AI tools have dramatically changed what it means to write software. Code generation, automated testing, and AI-assisted debugging have made the mechanical parts of programming faster than ever. But speed without direction creates waste.
+
+The engineers who thrive in the AI era are not the ones who can prompt an LLM the fastest. They are the ones who know what to build, why it matters, and how to evaluate whether the output is correct. These are judgment skills — and judgment is built through deliberate practice.
+
+When an AI generates 500 lines of code in seconds, the engineer's value lies in:
+
+- **Knowing whether those 500 lines solve the right problem**
+- **Recognizing architectural patterns that will cause pain later**
+- **Understanding the tradeoffs the AI cannot see** — organizational constraints, team capabilities, business context
+
+## What Does Deliberate Practice Look Like Day-to-Day?
+
+Here are concrete examples of deliberate practice habits that build engineering judgment:
+
+### Architecture Decision Reviews
+
+After every significant technical decision, write a brief retrospective: What was the decision? What alternatives did you consider? What did you learn? This builds pattern recognition for future architectural choices.
+
+### Constraint-Based Coding
+
+Deliberately constrain your approach to build flexibility. Write a feature without any external dependencies. Refactor a module to have zero side effects. Build a component that works with no state management library. These constraints force creative problem-solving and deepen understanding.
+
+### Code Reading Practice
+
+Spend 30 minutes a week reading code you did not write — in open source projects, in adjacent teams, in different languages. Reading code builds vocabulary and pattern recognition faster than writing code alone.
+
+### Failure Journaling
+
+Keep a running log of production incidents, bugs you introduced, and designs that did not work. Review it monthly. The goal is not self-criticism but pattern identification — what failure modes do you repeat?
+
+## How Do Engineering Leaders Build Deliberate Practice into Teams?
+
+Individual practice is necessary but insufficient. Engineering leaders need to create environments where deliberate practice is the default, not the exception.
+
+**Design reviews that teach, not gatekeep.** The purpose of a design review is not to catch mistakes but to share mental models. When a senior engineer explains why they chose one pattern over another, every participant builds judgment.
+
+**Blameless post-incident reviews.** Every production incident is a learning opportunity. The team that understands why something failed builds the judgment to prevent similar failures — but only if the review environment is safe enough for honest reflection.
+
+**Rotation through different problem domains.** Engineers who only work on one system become experts in that system but lose the ability to transfer patterns. Deliberate rotation builds the broad pattern recognition that makes engineers effective in novel situations.
+
+**Time for exploration.** Teams that ship feature after feature with no time for reflection do not grow. The most effective engineering organizations protect time for deliberate skill development — whether that is internal tech talks, reading groups, or hackathons focused on learning rather than shipping.
+
+## What Are Common Mistakes Engineers Make with Practice?
+
+The biggest mistake is confusing activity with practice. Shipping features every sprint is activity. Reflecting on what you learned from shipping those features is practice.
+
+Other common mistakes:
+
+- **Only practicing strengths.** If you are already great at backend architecture, practicing more backend architecture feels good but does not stretch you. Practice the skills that make you uncomfortable — writing documentation, giving technical presentations, designing for accessibility.
+- **Skipping the feedback loop.** Practice without feedback is just repetition. Find a mentor, join a code review group, or use structured frameworks to evaluate your own work.
+- **Optimizing for speed over understanding.** The goal of practice is not to go faster. It is to go deeper. When you truly understand a concept, speed follows naturally.
+
+## FAQ
+
+### How much time should engineers spend on deliberate practice?
+
+Even 30 minutes per week of focused, intentional practice produces measurable growth over a year. The key is consistency and intentionality, not volume. Start with one habit — architecture decision reviews or code reading — and build from there.
+
+### Can AI tools replace the need for deliberate practice?
+
+No. AI tools amplify existing judgment but cannot create it. An engineer without strong fundamentals will produce plausible-looking but fragile code with AI assistance. Deliberate practice builds the judgment that makes AI tools genuinely useful rather than dangerous.
+
+### Is deliberate practice only for junior engineers?
+
+Deliberate practice is especially important for senior engineers and engineering leaders. The skills that matter most at senior levels — architectural judgment, organizational awareness, technical communication — are precisely the skills that require the most intentional development.
+
+### How does deliberate practice relate to the ARC methodology?
+
+The ARC methodology is built on the principle that outcomes matter more than output. Deliberate practice develops the judgment needed to identify the right outcomes. Engineers who have invested in deliberate practice make better decisions at every step of ARC — from defining opportunities to evaluating results.
