@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
+import Giscus from '@giscus/react';
 import {
   Calendar,
   Clock,
@@ -406,6 +407,25 @@ export function BlogPostPage() {
               <div className="mt-12 pt-8 border-t border-gray-200 space-y-8">
                 <ShareLinks title={post.title} slug={post.slug} />
                 <AuthorInfo />
+              </div>
+
+              {/* Comments */}
+              <div className="mt-12 pt-8 border-t border-gray-200">
+                <h2 className="text-2xl font-bold text-gray-900 mb-8">Comments</h2>
+                <Giscus
+                  repo="joel-karr/joelkarr-website"
+                  repoId=""
+                  category="Blog Comments"
+                  categoryId=""
+                  mapping="pathname"
+                  strict="0"
+                  reactionsEnabled="1"
+                  emitMetadata="0"
+                  inputPosition="top"
+                  theme="light"
+                  lang="en"
+                  loading="lazy"
+                />
               </div>
 
               <RelatedPosts currentSlug={post.slug} />

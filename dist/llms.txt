@@ -40,6 +40,7 @@ GW Tech is a technology community founded by Joel Karr in 2016. It connects soft
 
 ## Blog Posts
 
+- [Don't Think When You Code: How Deliberate Practice Builds Engineering Intuition](https://joelkarr.com/blog/dont-think-when-you-code): The best software engineers don't think their way through every decision — they've trained their subconscious to recognize patterns. Here's how deliberate practice, task templates, and mental models turn conscious effort into engineering intuition.
 - [Why Big Bang Platform Rewrites Fail (And What to Do Instead)](https://joelkarr.com/blog/why-big-bang-rewrites-fail): Big bang platform rewrites fail because they introduce massive, unmanageable risk. Here's a proven incremental approach drawn from 20+ years of engineering leadership.
 - [What Is Deliberate Practice in Software Engineering?](https://joelkarr.com/blog/deliberate-practice-in-software-engineering): Deliberate practice in software engineering is the discipline of mastering your craft by drilling one small detail at a time. Here's how it differs from just writing more code.
 
