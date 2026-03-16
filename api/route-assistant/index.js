@@ -154,7 +154,7 @@ async function callAzureOpenAI({ query, currentPath, routeCatalog }) {
   };
 }
 
-export default async function (context, req) {
+module.exports = async function (context, req) {
   if (req.method === 'OPTIONS') {
     context.res = {
       status: 204,
