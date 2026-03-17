@@ -46,6 +46,10 @@ export function Footer() {
               Blog
             </Link>
             <span className="hidden md:block">&bull;</span>
+            <Link to="/awards" className="hover:text-white transition-colors">
+              Awards
+            </Link>
+            <span className="hidden md:block">&bull;</span>
             <button
               onClick={() => handleSectionClick('arc')}
               className="hover:text-white transition-colors"

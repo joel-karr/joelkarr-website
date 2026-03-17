@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Users, Calendar, Award, ExternalLink } from 'lucide-react';
 import logo from '@/assets/b7a220cbd0224ff4115d16c15bd8c8d837d3cccd.png';
 
@@ -53,9 +54,12 @@ export function GWTechSection() {
                   <Award className="w-6 h-6 text-gray-900" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Annual Awards (Coming 2026)</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Annual Awards — Now Accepting Nominations</h3>
                   <p className="text-gray-700">
-                    Recognizing excellence and innovation in technology through the inaugural GW Tech Annual Awards.
+                    Recognizing excellence and innovation in technology through the inaugural GW Tech Annual Awards.{' '}
+                    <Link to="/awards" className="text-gray-900 underline underline-offset-4 hover:text-gray-700 transition-colors">
+                      Nominate a peer
+                    </Link>.
                   </p>
                 </div>
               </div>

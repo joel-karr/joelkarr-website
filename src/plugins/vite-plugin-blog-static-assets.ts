@@ -50,6 +50,7 @@ function generateSitemap(posts: PostMeta[]): string {
   const staticPages = [
     { loc: SITE_URL, priority: '1.0', changefreq: 'monthly' },
     { loc: `${SITE_URL}/blog`, priority: '0.9', changefreq: 'weekly' },
+    { loc: `${SITE_URL}/awards`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE_URL}/llms.txt`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE_URL}/llms-full.txt`, priority: '0.7', changefreq: 'monthly' },
   ];
@@ -173,6 +174,7 @@ The six steps of ARC are:
 GW Tech is a technology community founded by Joel Karr in 2016. It connects software engineers, engineering leaders, and technologists passionate about innovation and software craft.
 
 - LinkedIn Group: https://www.linkedin.com/groups/15863032/
+- [GW Tech Annual Awards](${SITE_URL}/awards): Peer nominations for Innovator of the Year, The Craft Award, and Community Builder of the Year
 ${blogSection}
 
 ## Links
@@ -180,6 +182,7 @@ ${blogSection}
 - [Full details](${SITE_URL}/llms-full.txt): Extended reference for AI systems
 - [Website](${SITE_URL}): Joel Karr's personal website
 - [Blog](${SITE_URL}/blog): Blog posts on software engineering
+- [GW Tech Awards](${SITE_URL}/awards): Annual awards nominations
 - [RSS Feed](${SITE_URL}/rss.xml): RSS feed for blog updates
 - [Sitemap](${SITE_URL}/sitemap.xml): Site map
 `;
@@ -308,11 +311,12 @@ GW Tech is a technology community founded by Joel Karr in 2016. It connects soft
 
 - Community-Driven: Connect with software engineers, engineering leaders, and technologists who share a passion for software craft and deliberate practice.
 - Tech Events: Regular meetups, tech talks, and events exploring AI-driven development, engineering leadership, and software craft.
-- Annual Awards (Coming 2026): Recognizing excellence and innovation in technology through the inaugural GW Tech Annual Awards.
+- Annual Awards (Now Accepting Nominations): Recognizing excellence and innovation in technology through the inaugural GW Tech Annual Awards. Three peer-nominated awards: Innovator of the Year, The Craft Award, and Community Builder of the Year. Nominate at ${SITE_URL}/awards.
 
 ### Join GW Tech
 
 - LinkedIn Group: https://www.linkedin.com/groups/15863032/
+- Annual Awards: ${SITE_URL}/awards
 ${blogSection}
 `;
 }

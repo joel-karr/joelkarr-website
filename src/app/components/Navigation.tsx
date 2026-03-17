@@ -98,6 +98,7 @@ export function Navigation() {
   }, [isHomePage, navigate]);
 
   const isBlogActive = location.pathname.startsWith('/blog');
+  const isAwardsActive = location.pathname.startsWith('/awards');
 
   return (
     <nav
@@ -139,6 +140,16 @@ export function Navigation() {
               }`}
             >
               Blog
+            </Link>
+            <Link
+              to="/awards"
+              className={`transition-colors ${
+                isAwardsActive
+                  ? 'text-gray-900 font-semibold'
+                  : 'text-gray-700 hover:text-gray-900'
+              }`}
+            >
+              Awards
             </Link>
             <button
               onClick={() => handleNavClick('connect')}
@@ -192,6 +203,17 @@ export function Navigation() {
                 }`}
               >
                 Blog
+              </Link>
+              <Link
+                to="/awards"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`text-left py-2 transition-colors ${
+                  isAwardsActive
+                    ? 'text-gray-900 font-semibold'
+                    : 'text-gray-700 hover:text-gray-900'
+                }`}
+              >
+                Awards
               </Link>
               <button
                 onClick={() => handleNavClick('connect')}

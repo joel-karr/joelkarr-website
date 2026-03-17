@@ -8,6 +8,7 @@ import { HomePage } from './pages/HomePage';
 import { BlogListPage } from './pages/BlogListPage';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { AwardsPage } from './pages/AwardsPage';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogListPage />} />
           <Route path="/blog/:slug/*" element={<BlogPostPage />} />
+          <Route path="/awards" element={<AwardsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
