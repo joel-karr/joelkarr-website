@@ -120,13 +120,20 @@ export function NotFoundPage() {
       .map(({ item }) => item);
   };
 
+  const pick = (options: string[]) => options[Math.floor(Math.random() * options.length)];
+
   const createAssistantReply = (rawInput: string): AssistantMessage => {
     const normalized = rawInput.toLowerCase().trim();
     const greeting = /^(hi|hello|hey|yo)\b/.test(normalized);
     if (greeting) {
       return {
         role: 'assistant',
-        text: 'Hey! What are you looking for? I can point you in the right direction.',
+        text: pick([
+          'Hey! What are you looking for? I can point you in the right direction.',
+          'Hi there. What were you trying to find?',
+          'Hey — tell me what you\'re after and I\'ll see what I can dig up.',
+          'What\'s up! Looking for something specific on the site?',
+        ]),
         source: 'local'
       };
     }
@@ -136,7 +143,12 @@ export function NotFoundPage() {
     if (suggestions.length === 0) {
       return {
         role: 'assistant',
-        text: 'Hmm, nothing jumped out for that one. Maybe try something like "ARC", "book", "deliberate practice", or "big bang rewrites"?',
+        text: pick([
+          'Hmm, nothing jumped out for that one. Maybe try "ARC", "book", "deliberate practice", or "big bang rewrites"?',
+          'Not finding a strong match there. Try different keywords — topics like the book, ARC methodology, or a blog post title work best.',
+          'Coming up empty on that. What topic were you interested in? I\'m good with engineering, AI lifecycle, and Joel\'s writing.',
+          'No luck with that search. Try being more specific — like "software craft" or "platform rewrites".',
+        ]),
         suggestions: routeCatalog.filter((r) => r.path === '/blog' || r.path === '/#arc' || r.path === '/#book'),
         source: 'local'
       };
@@ -144,7 +156,13 @@ export function NotFoundPage() {
 
     return {
       role: 'assistant',
-      text: 'Here\'s what I found — any of these what you had in mind?',
+      text: pick([
+        'Here\'s what I found — any of these what you had in mind?',
+        'These look like solid matches. See anything that fits?',
+        'Got a few options for you. Take a look.',
+        'Think one of these is what you\'re after.',
+        'Here are the closest matches I could find.',
+      ]),
       suggestions,
       source: 'local'
     };
