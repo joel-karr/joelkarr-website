@@ -20,7 +20,24 @@
       "Bash(grep -o '<div id=\"root\">.\\\\{0,200\\\\}' dist/index.html | head -1)",
       "Bash(grep -o '<div id=\"root\">.\\\\{0,200\\\\}' dist/blog/dont-think-when-you-code/index.html | head -1)",
       "Bash(git add:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(gh run:*)",
+      "WebFetch(domain:red-pond-0047d4b0f.2.azurestaticapps.net)",
+      "Bash(curl -s -I https://joelkarr.com/robots.txt)",
+      "Bash(curl -s -I https://joelkarr.com/ 2>&1 | head -20)",
+      "Bash(nslookup joelkarr.com 2>&1 | head -10)",
+      "Bash(nslookup red-pond-0047d4b0f.2.azurestaticapps.net 2>&1 | head -10)",
+      "Bash(nslookup -type=CNAME www.joelkarr.com 2>&1 | head -10)",
+      "Bash(az staticwebapp:*)",
+      "WebFetch(domain:www.joelkarr.com)",
+      "Bash(nslookup -type=SOA joelkarr.com 2>&1)",
+      "Bash(az login:*)",
+      "Bash(az account:*)",
+      "Bash(nslookup joelkarr.com 2>&1)",
+      "Bash(nslookup joelkarr.com 8.8.8.8 2>&1)",
+      "Bash(find:*)",
+      "Bash(curl:*)",
+      "Bash(nslookup:*)"
     ]
   }
 }

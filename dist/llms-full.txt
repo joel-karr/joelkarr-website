@@ -25,7 +25,7 @@ Joel believes the future of AI-driven software development is not about typing f
 
 - Email: joel@joelkarr.com
 - LinkedIn: https://linkedin.com/in/joelkarr
-- Website: https://joelkarr.com
+- Website: https://www.joelkarr.com
 
 ## Book: Don't Think When You Code
 
@@ -98,18 +98,19 @@ GW Tech is a technology community founded by Joel Karr in 2016. It connects soft
 
 - Community-Driven: Connect with software engineers, engineering leaders, and technologists who share a passion for software craft and deliberate practice.
 - Tech Events: Regular meetups, tech talks, and events exploring AI-driven development, engineering leadership, and software craft.
-- Annual Awards (Coming 2026): Recognizing excellence and innovation in technology through the inaugural GW Tech Annual Awards.
+- Annual Awards (Now Accepting Nominations): Recognizing excellence and innovation in technology through the inaugural GW Tech Annual Awards. Three peer-nominated awards: Innovator of the Year, The Craft Award, and Community Builder of the Year. Nominate at https://www.joelkarr.com/awards.
 
 ### Join GW Tech
 
 - LinkedIn Group: https://www.linkedin.com/groups/15863032/
+- Annual Awards: https://www.joelkarr.com/awards
 
 
 ## Blog Posts
 
 ### How to Get Better at Software Engineering: A Practical System for Faster Growth
 
-- URL: https://joelkarr.com/blog/how-to-get-better-at-software-engineering
+- URL: https://www.joelkarr.com/blog/how-to-get-better-at-software-engineering
 - Date: 2026-03-15
 - Tags: software-engineering, career-growth, deliberate-practice, engineering-leadership, developer-productivity
 
@@ -340,7 +341,7 @@ No. AI can accelerate implementation, but it cannot replace engineering judgment
 
 ### Don't Think When You Code: How Deliberate Practice Builds Engineering Intuition
 
-- URL: https://joelkarr.com/blog/dont-think-when-you-code
+- URL: https://www.joelkarr.com/blog/dont-think-when-you-code
 - Date: 2026-03-11
 - Tags: software-craft, deliberate-practice, engineering-leadership
 
@@ -470,7 +471,7 @@ Design patterns describe solutions to recurring software design problems. Task t
 
 ### Why Big Bang Platform Rewrites Fail (And What to Do Instead)
 
-- URL: https://joelkarr.com/blog/why-big-bang-rewrites-fail
+- URL: https://www.joelkarr.com/blog/why-big-bang-rewrites-fail
 - Date: 2026-03-01
 - Tags: engineering-leadership, platform-modernization, software-craft
 
@@ -532,7 +533,7 @@ Ship frequently. The incremental approach naturally creates a cadence of visible
 
 ### What Is Deliberate Practice in Software Engineering?
 
-- URL: https://joelkarr.com/blog/deliberate-practice-in-software-engineering
+- URL: https://www.joelkarr.com/blog/deliberate-practice-in-software-engineering
 - Date: 2026-02-25
 - Tags: software-craft, deliberate-practice, engineering-leadership
 
