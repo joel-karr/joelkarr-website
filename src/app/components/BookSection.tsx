@@ -28,22 +28,10 @@ export function BookSection() {
         'Make stronger architecture decisions under uncertainty by scanning for patterns instead of rethinking every line.'
     },
     {
-      chapter: 'Chapter 5',
-      title: 'Framing Problems Before Estimating Delivery',
-      summary:
-        'Improve SDLC planning by surfacing hidden assumptions early so teams avoid expensive late-stage changes.'
-    },
-    {
       chapter: 'Chapter 9',
       title: 'How Teams Make Decisions That Stay Decided',
       summary:
         'Prevent decision churn by tying choices to assumptions and only reopening when new information appears.'
-    },
-    {
-      chapter: 'Chapter 10',
-      title: 'Feedback Systems That Improve Engineering Velocity',
-      summary:
-        'Build psychological safety with high standards so code reviews drive learning, quality, and faster execution.'
     },
     {
       chapter: 'Chapter 16',
@@ -110,14 +98,14 @@ export function BookSection() {
 
         {/* Chapter Highlights */}
         <div className="mb-6">
-          <h3 className="text-2xl text-gray-900">Chapter Highlights (8 of 16)</h3>
+          <h3 className="text-2xl text-gray-900">Chapter Highlights</h3>
           <p className="text-gray-600 mt-2">
             Built for engineers focused on AI-driven software lifecycle execution, stronger SDLC practices,
             and long-term software engineering growth.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {chapterHighlights.map((chapter, index) => {
             return (
               <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition-all">

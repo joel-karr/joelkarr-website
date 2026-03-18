@@ -16,7 +16,7 @@ export function ARCSection() {
     },
     {
       icon: FileText,
-      title: "Task Templates",
+      title: "Plan",
       description: "Shorthand for common task groups engineers already understand, containing interfaces, objects, and tasks."
     },
     {

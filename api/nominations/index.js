@@ -21,23 +21,32 @@ function validate(body) {
   if (!body.award || !VALID_AWARDS.includes(body.award)) {
     errors.push('award must be one of: innovator, craft, community-builder');
   }
+  if (!body.nomineeName || body.nomineeName.trim().length < 2) {
+    errors.push('nomineeName is required (min 2 characters)');
+  }
+  if (!body.nomineeTitle || body.nomineeTitle.trim().length < 2) {
+    errors.push('nomineeTitle is required');
+  }
+  if (!body.nomineeCompany || body.nomineeCompany.trim().length < 2) {
+    errors.push('nomineeCompany is required');
+  }
+  if (!body.nomineePhone || body.nomineePhone.trim().length < 7) {
+    errors.push('nomineePhone is required');
+  }
+  if (!body.nomineeEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.nomineeEmail)) {
+    errors.push('a valid nomineeEmail is required');
+  }
   if (!body.nominatorName || body.nominatorName.trim().length < 2) {
     errors.push('nominatorName is required (min 2 characters)');
   }
   if (!body.nominatorEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.nominatorEmail)) {
     errors.push('a valid nominatorEmail is required');
   }
-  if (!body.nomineeName || body.nomineeName.trim().length < 2) {
-    errors.push('nomineeName is required (min 2 characters)');
-  }
-  if (!body.nomineeRole || body.nomineeRole.trim().length < 2) {
-    errors.push('nomineeRole is required');
-  }
   if (!body.justification || body.justification.trim().length < 50) {
     errors.push('justification is required (min 50 characters)');
   }
-  if (body.justification && body.justification.length > 2000) {
-    errors.push('justification must be under 2000 characters');
+  if (body.justification && body.justification.length > 5000) {
+    errors.push('justification must be under 5000 characters');
   }
 
   return errors;
@@ -76,7 +85,10 @@ module.exports = async function (context, req) {
     <table style="border-collapse:collapse;width:100%;max-width:600px;">
       <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Award</td><td style="padding:8px;border-bottom:1px solid #eee;">${awardLabel}</td></tr>
       <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Nominee</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.nomineeName.trim()}</td></tr>
-      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Nominee Role</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.nomineeRole.trim()}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Title</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.nomineeTitle.trim()}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Company</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.nomineeCompany.trim()}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Phone</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.nomineePhone.trim()}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Nominee Email</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.nomineeEmail.trim()}</td></tr>
       <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Nominated By</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.nominatorName.trim()} (${body.nominatorEmail.trim()})</td></tr>
     </table>
     <h3 style="margin-top:24px;">Justification</h3>
