@@ -6,8 +6,8 @@ author: "Joel Karr"
 tags: ["software-craft", "deliberate-practice", "engineering-leadership"]
 slug: "deliberate-practice-in-software-engineering"
 readingTime: "7 min read"
-image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200"
-imageAlt: "Person practicing focused skill development at a workstation"
+image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200"
+imageAlt: "Monitor displaying lines of code, representing focused, deliberate practice at a workstation"
 ---
 
 Deliberate practice in software engineering is the discipline of mastering your craft by drilling one small detail at a time. It is not about typing faster, writing more lines of code, or working longer hours. It is about building pattern recognition, reducing cognitive load, and solving the right problems with clarity and discipline.
