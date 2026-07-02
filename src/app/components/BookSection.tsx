@@ -1,43 +1,44 @@
 import { BookOpen } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { NewsletterSignup } from './NewsletterSignup';
 
 export function BookSection() {
   const chapterHighlights = [
     {
       chapter: 'Chapter 1',
-      title: 'Flow State for Software Engineers',
+      title: 'When the Same Work Feels Different',
       summary:
-        'How top engineers enter flow more often by matching challenge to skill and training pattern recognition.'
+        'Why the same coding work feels effortless one month and like a grind the next — and what decades of flow research says about getting the good state back.'
     },
     {
       chapter: 'Chapter 2',
-      title: 'Deliberate Practice That Improves Coding Faster',
+      title: "Why Experience Alone Isn't Enough",
       summary:
-        'A practical training-journal method to become a better software engineer with targeted, repeatable skill reps.'
+        'A training journal technique borrowed from a Big Ten wrestling room that turns your daily work into deliberate practice — one small detail at a time.'
     },
     {
       chapter: 'Chapter 3',
-      title: 'Task Templates for a Faster SDLC',
+      title: 'Think Now, Build Later',
       summary:
-        'Use reusable implementation playbooks to reduce rework, improve estimates, and speed up the software development lifecycle.'
+        'Task templates: pre-built approaches that hold up under pressure — including the plan that beat an SEC deadline consultants said needed ten months.'
     },
     {
       chapter: 'Chapter 4',
-      title: 'Mental Models for Legacy Code and Architecture',
+      title: "Don't Use Your Eyes to See Code",
       summary:
-        'Make stronger architecture decisions under uncertainty by scanning for patterns instead of rethinking every line.'
+        'How pattern recognition and trained mental models let you make confident architecture decisions without reading a legacy system line by line.'
     },
     {
       chapter: 'Chapter 9',
-      title: 'How Teams Make Decisions That Stay Decided',
+      title: 'The Cost of Re-Deciding',
       summary:
-        'Prevent decision churn by tying choices to assumptions and only reopening when new information appears.'
+        'Teams fail more often from reopening good decisions than from making bad ones. The rule that makes decisions durable — without silencing dissent.'
     },
     {
       chapter: 'Chapter 16',
-      title: 'AI in the Software Lifecycle and Modern SDLC',
+      title: 'What Never Changes',
       summary:
-        'Translate proven task templates into AI prompt templates to improve output quality across the AI software lifecycle.'
+        'Every shift in how we talk to computers follows the same pattern, and AI is no exception: task templates become skills, and context becomes the bottleneck.'
     }
   ];
 
@@ -49,7 +50,7 @@ export function BookSection() {
           <div className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 text-gray-600 mb-4">
               <BookOpen size={20} aria-hidden="true" />
-              <span className="uppercase tracking-wider text-sm">Coming Soon &bull; Summer 2026</span>
+              <span className="uppercase tracking-wider text-sm">Coming 2026</span>
             </div>
 
             <h2 itemProp="name" className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-gray-900">
@@ -69,18 +70,11 @@ export function BookSection() {
               to building software and leading engineers.
             </p>
 
-            <p className="text-base text-gray-600 mb-8">
-              These chapter highlights focus on practical systems for AI software development lifecycle
-              execution, modern SDLC planning, and becoming a better software engineer.
-            </p>
-
-            <button
-              disabled
-              className="bg-gray-400 text-white px-8 py-4 rounded-lg inline-flex items-center gap-2 cursor-not-allowed"
-            >
-              Pre-Order Coming Soon
-              <BookOpen size={20} aria-hidden="true" />
-            </button>
+            <NewsletterSignup
+              source="book-section"
+              heading="Read it first"
+              description="Join the launch list for a free sample chapter and first notice when the book is available."
+            />
           </div>
 
           <div className="order-1 lg:order-2">
@@ -100,8 +94,8 @@ export function BookSection() {
         <div className="mb-6">
           <h3 className="text-2xl text-gray-900">Chapter Highlights</h3>
           <p className="text-gray-600 mt-2">
-            Built for engineers focused on AI-driven software lifecycle execution, stronger SDLC practices,
-            and long-term software engineering growth.
+            Stories from the trenches, the research that explains them, and practices you can
+            put to work the same week.
           </p>
         </div>
 

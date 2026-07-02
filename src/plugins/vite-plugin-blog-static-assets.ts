@@ -145,7 +145,7 @@ Joel Karr is a CTO with over 20 years of experience in software engineering. He 
 
 ## Book: Don't Think When You Code
 
-A book about the craft of software engineering in the AI era, coming Summer 2026. Drawn from 20+ years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice.
+A book about the craft of software engineering in the AI era, coming in 2026. Drawn from 20+ years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice.
 
 Chapter highlights include:
 - Chapter 1: Flow state for software engineers and deep focus
@@ -242,7 +242,7 @@ Joel believes the future of AI-driven software development is not about typing f
 
 ## Book: Don't Think When You Code
 
-"Don't Think When You Code" is a book about the craft of software engineering in the AI era, coming Summer 2026. It is drawn from over 20 years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice -- drilling one small detail at a time.
+"Don't Think When You Code" is a book about the craft of software engineering in the AI era, coming in 2026. It is drawn from over 20 years of experience building high-performing teams, surviving production disasters, and learning that mastery comes from deliberate practice -- drilling one small detail at a time.
 
 From learning QuickBASIC as a 10-year-old in small-town Illinois to leading engineering teams through full-scale platform modernizations and AI transformations, Joel shares the stories, frameworks, and hard-won lessons that shaped his approach to building software and leading engineers.
 

@@ -5,8 +5,8 @@ export function AboutSection() {
   const milestones = [
     {
       icon: BookOpen,
-      title: "Published Author",
-      description: "Author of \"Don't Think When You Code\" — teaching software craft and deliberate practice through 20+ years of engineering stories"
+      title: "Author",
+      description: "Author of \"Don't Think When You Code\" (coming 2026) — teaching software craft and deliberate practice through 20+ years of engineering stories"
     },
     {
       icon: Lightbulb,

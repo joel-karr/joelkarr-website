@@ -15,6 +15,7 @@ import {
   Check,
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
+import { NewsletterSignup } from '../components/NewsletterSignup';
 import { findClosestPostBySlug, getPostBySlug, getRelatedPosts, formatDate } from '@/lib/blog';
 import type { BlogPost } from '@/lib/blogTypes';
 
@@ -418,6 +419,17 @@ export function BlogPostPage() {
               <div className="mt-12 pt-8 border-t border-gray-200 space-y-8">
                 <ShareLinks title={post.title} slug={post.slug} />
                 <AuthorInfo />
+              </div>
+
+              {/* Book launch list */}
+              <div className="mt-12 bg-gray-50 border border-gray-200 rounded-xl p-8">
+                <NewsletterSignup
+                  source={`blog:${post.slug}`}
+                  heading="Enjoyed this? It's from the book."
+                  description={
+                    'These ideas come from "Don’t Think When You Code," coming in 2026. Join the launch list for a free sample chapter.'
+                  }
+                />
               </div>
 
               {/* Comments */}

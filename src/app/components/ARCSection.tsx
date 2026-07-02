@@ -78,9 +78,10 @@ export function ARCSection() {
               amplify human judgment and engineering expertise.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Built on principles learned from 20+ years of engineering leadership, deliberate
-              practice, and surviving production disasters at scale — the same lessons explored
-              in <em>Don't Think When You Code</em>.
+              ARC is the methodology built from <em>Don't Think When You Code</em>. The book
+              teaches the practices — task templates, mental models, durable decisions — and
+              ARC turns them into an operating system your whole team can run. If the book is
+              the training, ARC is the playbook.
             </p>
           </div>
 

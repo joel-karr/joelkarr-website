@@ -1,5 +1,6 @@
 import { Linkedin, Mail, BookOpen, ArrowRight } from 'lucide-react';
 import { scrollToSection } from '@/utils/scrollToSection';
+import { NewsletterSignup } from './NewsletterSignup';
 
 export function ConnectSection() {
   return (
@@ -55,14 +56,17 @@ export function ConnectSection() {
           <BookOpen size={40} className="mx-auto mb-4 text-gray-900" aria-hidden="true" />
           <h3 className="text-2xl mb-3 text-gray-900">Get the Book</h3>
           <p className="text-gray-600 mb-6">
-            "Don't Think When You Code" is coming Summer 2026. Dive deeper into software craft,
+            "Don't Think When You Code" is coming in 2026. Dive deeper into software craft,
             engineering team dynamics, and the path to AI-era engineering leadership.
           </p>
+          <div className="max-w-xl mx-auto text-left">
+            <NewsletterSignup source="connect-section" />
+          </div>
           <button
             onClick={() => scrollToSection('book')}
-            className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-all"
+            className="mt-4 text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors"
           >
-            Learn More
+            Learn more about the book
           </button>
         </div>
       </div>
