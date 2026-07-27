@@ -1,7 +1,7 @@
 ---
 title: "Creative Problem-Solving for Software Engineers: Where Good Ideas Actually Come From"
 description: "Creative problem-solving for software engineers is a trainable process, not a gift. Learn the PAGES framework and five steps to breakthrough ideas."
-date: "2026-07-19"
+date: "2026-07-27"
 author: "Joel Karr"
 tags: ["software-craft", "creative-problem-solving", "task-templates"]
 slug: "creative-problem-solving-for-software-engineers"
