@@ -6,8 +6,8 @@ author: "Joel Karr"
 tags: ["engineering-leadership", "decision-making", "team-alignment"]
 slug: "how-to-make-engineering-decisions-stick"
 readingTime: "8 min read"
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
-imageAlt: "Engineering team gathered around a table debating a decision, representing the hidden cost of reopening settled choices"
+image: "/images/blog/how-to-make-engineering-decisions-stick.webp"
+imageAlt: "An open notebook with a decision diagram and one blue-highlighted choice beside a laptop."
 ---
 
 Most engineering teams worry about making the wrong decision. In my experience, that's rarely what kills a project. Teams are far more likely to fail from reopening good decisions than from making bad ones. If you want to make engineering decisions stick, you need something stronger than consensus in a meeting — you need a rule for when a decision is allowed to come back open.

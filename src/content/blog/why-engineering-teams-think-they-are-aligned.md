@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "team-alignment", "software-craft", "communicat
 slug: "why-engineering-teams-think-they-are-aligned"
 readingTime: "12 min read"
 image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
-imageAlt: "Team collaborating around a whiteboard, representing engineering alignment and shared mental models"
+imageAlt: "A team gathered around a whiteboard covered with colorful sticky notes"
 ---
 
 Every engineering leader has lived this moment. You walk out of a planning session feeling great. Everyone nodded along. The architecture made sense. The teams knew what to build.

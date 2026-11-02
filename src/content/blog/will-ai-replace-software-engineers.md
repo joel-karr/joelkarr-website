@@ -7,7 +7,7 @@ tags: ["ai-code-generation", "prompt-templates", "software-craft"]
 slug: "will-ai-replace-software-engineers"
 readingTime: "8 min read"
 image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200"
-imageAlt: "Developer working with AI-assisted code on a screen, representing AI code generation in software engineering"
+imageAlt: "A person holding a sticky note labeled Python"
 ---
 
 Will AI replace software engineers? If you read the headlines, the answer already feels settled: junior developers aren't needed, kids shouldn't bother learning to code, and AI code generation is coming for every programming job. I understand the fear. I felt a version of it myself years before ChatGPT existed — and history has a very consistent answer for anyone willing to look at the pattern.

@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "feedback", "communication"]
 slug: "feedback-paradox-psychological-safety-engineering-teams"
 readingTime: "9 min read"
 image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200"
-imageAlt: "Engineering team gathered around a table in an open discussion, representing peer-driven feedback and psychological safety"
+imageAlt: "Colleagues discussing documents around a wooden table"
 ---
 
 A freshman wrestler was heading to the visiting locker room before a junior varsity meet. To get there, he had to walk through the practice gym where the varsity team was still drilling. He stopped and watched.

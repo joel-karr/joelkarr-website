@@ -7,7 +7,7 @@ tags: ["software-craft", "mental-models", "deliberate-practice", "engineering-le
 slug: "mental-models-for-software-engineers"
 readingTime: "10 min read"
 image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200"
-imageAlt: "An engineer mapping out system design decisions on a whiteboard"
+imageAlt: "Laptop keyboard and screen displaying code"
 ---
 
 The best engineers I've worked with don't think harder than everyone else — they think *less*. Faced with a decision that paralyzes a junior developer, they glance at the problem and already know the answer. That isn't talent, and it isn't luck. It's **mental models**: compressed representations of how systems behave that let you skip the slow, deliberate analysis and reach for the right pattern immediately. After two decades of leading engineering teams, I'm convinced that building mental models deliberately is the single highest-leverage thing an engineer can do to get faster without burning out.

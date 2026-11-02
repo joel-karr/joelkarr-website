@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "platform-modernization", "software-craft"]
 slug: "why-big-bang-rewrites-fail"
 readingTime: "8 min read"
 image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200"
-imageAlt: "Architecture blueprint representing platform modernization planning"
+imageAlt: "Laptop displaying charts and a data dashboard"
 ---
 
 Big bang platform rewrites fail because they introduce massive, unmanageable risk into software projects. After leading engineering teams through multiple full-scale platform modernizations, I've learned that the answer is almost never "rewrite everything from scratch." The incremental approach wins every time.

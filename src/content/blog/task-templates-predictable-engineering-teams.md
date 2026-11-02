@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "task-templates", "software-craft", "team-produ
 slug: "task-templates-predictable-engineering-teams"
 readingTime: "9 min read"
 image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200"
-imageAlt: "Planning dashboard and workspace, representing repeatable task templates and predictable execution"
+imageAlt: "Colleagues working with laptops and paper notes at a shared table"
 ---
 
 The fastest engineering teams I've worked with are not the ones with the most talent or the newest frameworks. They're the ones that have made the most decisions in advance. They use **task templates** — pre-built approaches to common problems that remove repeated decision-making — so that when the pressure is on, the team executes instead of debates.

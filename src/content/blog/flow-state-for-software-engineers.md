@@ -7,7 +7,7 @@ tags: ["software-craft", "career-growth", "developer-productivity"]
 slug: "flow-state-for-software-engineers"
 readingTime: "9 min read"
 image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
-imageAlt: "Laptop screen glowing with code in a dim room, representing a software engineer deep in a flow state"
+imageAlt: "Laptop displaying code on a bright desk beside a window"
 ---
 
 Fifteen minutes before the doors opened, the product wouldn't load.

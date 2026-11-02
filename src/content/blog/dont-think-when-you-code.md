@@ -7,7 +7,7 @@ tags: ["software-craft", "deliberate-practice", "engineering-leadership"]
 slug: "dont-think-when-you-code"
 readingTime: "10 min read"
 image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200"
-imageAlt: "Engineer in deep focus at a workstation, representing the flow state in software development"
+imageAlt: "A person pointing at a laptop screen during a discussion"
 ---
 
 The title sounds counterintuitive. Engineers are paid to think. But after twenty years of building software and leading engineering teams, I've learned that the best engineers don't consciously think through every decision — they've trained their subconscious to recognize patterns so well that the right answer arrives before they realize they were thinking.

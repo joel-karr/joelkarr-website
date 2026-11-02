@@ -6,8 +6,8 @@ author: "Joel Karr"
 tags: ["software-craft", "ai", "code-review", "deliberate-practice"]
 slug: "how-to-review-ai-generated-code"
 readingTime: "7 min read"
-image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200"
-imageAlt: "Open paper notebook with a pen resting on it, representing a software engineer's daily training journal"
+image: "/images/blog/how-to-review-ai-generated-code.webp"
+imageAlt: "An engineer reviews code on a laptop while holding a pen over a paper checklist."
 ---
 
 An AI-generated pull request can be easy to read and hard to trust. The names are sensible. The functions are small. There are tests. You understand each line, but you still can't explain whether the change will behave correctly in your system.

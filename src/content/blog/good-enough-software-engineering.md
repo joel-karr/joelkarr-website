@@ -6,8 +6,8 @@ author: "Joel Karr"
 tags: ["software-craft", "engineering-leadership", "decision-making"]
 slug: "good-enough-software-engineering"
 readingTime: "8 min read"
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200"
-imageAlt: "Engineer weighing tradeoffs at a desk with a laptop and handwritten notes"
+image: "/images/blog/good-enough-software-engineering.webp"
+imageAlt: "A simple wooden bridge model beside unused parts and more complex miniature structures."
 ---
 
 I was walking up to historic Wrigley Field for a Cubs game, buzzing with excitement, when I opened the ticket app I'd checked minutes earlier. Instead of my ticket, I got a spinning icon. The line kept moving. I kept refreshing. By the time I reached the attendant, the screen was still loading.

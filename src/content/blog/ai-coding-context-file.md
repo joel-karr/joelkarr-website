@@ -5,6 +5,8 @@ date: "2026-11-02"
 author: "Joel Karr"
 tags: ["software-craft", "ai"]
 slug: "ai-coding-context-file"
+image: "/images/blog/ai-coding-context-file.webp"
+imageAlt: "A hand arranges connected reference cards beside a laptop on a sunlit wooden desk."
 ---
 
 Suppose you ask an AI coding assistant to hide archived projects from a project picker.

@@ -7,7 +7,7 @@ tags: ["software-craft", "creative-problem-solving", "task-templates"]
 slug: "creative-problem-solving-for-software-engineers"
 readingTime: "8 min read"
 image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=1200"
-imageAlt: "A glowing lightbulb held against a dark background, representing creative breakthroughs in engineering"
+imageAlt: "Purple and pink electrical filaments inside a plasma globe"
 ---
 
 We'd been stuck for months. Tens of thousands of restaurants on the platform, daily updates causing lock waits, search queries timing out under load. We'd tried everything we knew — maintenance scripts, execution plan tuning, indexes. Nothing got us close to the sub-second response time we needed.

@@ -7,7 +7,7 @@ tags: ["software-engineering", "career-growth", "deliberate-practice", "engineer
 slug: "how-to-get-better-at-software-engineering"
 readingTime: "11 min read"
 image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200"
-imageAlt: "Software engineer planning architecture on a whiteboard"
+imageAlt: "Close-up of colorful source code on a dark screen"
 ---
 
 If you are searching for how to get better at software engineering, you are probably not looking for another list of generic tips.

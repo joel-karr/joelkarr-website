@@ -7,7 +7,7 @@ tags: ["platform-modernization", "engineering-leadership", "software-craft"]
 slug: "strangler-fig-pattern-legacy-modernization"
 readingTime: "9 min read"
 image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200"
-imageAlt: "Sunlight filtering through a dense forest canopy, evoking a strangler fig slowly growing around its host tree"
+imageAlt: "Sunlight filtering through tall trees in a dense forest"
 ---
 
 The plan looked perfect on paper. Detailed milestones. Clear ownership. Some of the best engineers in Chicago, a consultant from Microsoft, and an executive team that had asked for "the latest and greatest of everything." We were going to rewrite a decade of Classic ASP into a cloud-native platform on Azure, all at once.

@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "incident-response", "software-craft"]
 slug: "how-to-stay-calm-during-production-incidents"
 readingTime: "8 min read"
 image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200"
-imageAlt: "Server racks glowing in a dark data center, representing the pressure of a production outage"
+imageAlt: "Illuminated server racks and cabling in a dark data center"
 ---
 
 The call came two hours into the outage.

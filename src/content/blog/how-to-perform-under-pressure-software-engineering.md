@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "incident-response", "decision-making"]
 slug: "how-to-perform-under-pressure-software-engineering"
 readingTime: "8 min read"
 image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200"
-imageAlt: "Engineer monitoring dashboards during a production incident, representing performing under pressure during an outage"
+imageAlt: "Network cables connected to ports on rack-mounted equipment"
 ---
 
 The call came two hours into the outage.

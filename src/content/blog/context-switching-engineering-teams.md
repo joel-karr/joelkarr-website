@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "team-productivity", "software-craft"]
 slug: "context-switching-engineering-teams"
 readingTime: "8 min read"
 image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200"
-imageAlt: "An open-plan engineering office with empty desks, representing a team caught in constant interruptions and context switching"
+imageAlt: "Bright open-plan office with long desks, empty chairs, and plants"
 ---
 
 I took the job while hopped up on artisanal coffee.

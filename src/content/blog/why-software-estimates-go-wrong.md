@@ -6,8 +6,8 @@ author: "Joel Karr"
 tags: ["software-craft", "engineering-leadership", "communication"]
 slug: "why-software-estimates-go-wrong"
 readingTime: "7 min read"
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
-imageAlt: "Engineering team gathered around a whiteboard debating a problem before committing to a plan"
+image: "/images/blog/why-software-estimates-go-wrong.webp"
+imageAlt: "Hands grouping project sketch cards inside a blue boundary, with extra cards outside."
 ---
 
 "But every game you play costs thirty cents."

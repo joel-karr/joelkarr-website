@@ -6,8 +6,8 @@ author: "Joel Karr"
 tags: ["engineering-leadership", "team-productivity", "ai-code-generation"]
 slug: "why-good-ideas-dont-spread-engineering-teams"
 readingTime: "9 min read"
-image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200"
-imageAlt: "Two engineers working side by side at a laptop, representing paired coaching that spreads new practices across a team"
+image: "/images/blog/why-good-ideas-dont-spread-engineering-teams.webp"
+imageAlt: "Two engineers learning together at a laptop in a bright office."
 ---
 
 Thirty engineers sat through the same video call. They heard the same demonstration, asked good questions, and nodded along. Two days later, exactly one of them had changed how he worked.

@@ -6,8 +6,8 @@ author: "Joel Karr"
 tags: ["engineering-leadership", "communication", "career-growth"]
 slug: "reducing-uncertainty-engineering-leadership"
 readingTime: "9 min read"
-image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200"
-imageAlt: "Two colleagues talking across a table in an office, representing an engineering leader translating complexity for a stakeholder"
+image: "/images/blog/reducing-uncertainty-engineering-leadership.webp"
+imageAlt: "A hand compares three options on a decision brief beside scattered analysis notes and charts."
 ---
 
 I spent days preparing for one of my first one-on-ones with the CEO.

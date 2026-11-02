@@ -7,7 +7,7 @@ tags: ["engineering-leadership", "feedback", "communication", "software-craft"]
 slug: "how-to-give-technical-feedback-engineers-act-on"
 readingTime: "9 min read"
 image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200"
-imageAlt: "Two engineers reviewing code together at a shared screen"
+imageAlt: "A team working together with laptops around an office table"
 ---
 
 Most technical feedback gets ignored — not because engineers are stubborn, but because the feedback is vague, arrives too late, or lands as a verdict instead of an invitation to improve. After two decades of leading engineering teams and reviewing more pull requests than I can count, I've learned that the way you deliver feedback matters as much as the feedback itself. Good feedback changes behavior. Bad feedback just creates resentment.

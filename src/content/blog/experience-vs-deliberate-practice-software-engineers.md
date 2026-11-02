@@ -7,7 +7,7 @@ tags: ["software-craft", "deliberate-practice", "career-growth"]
 slug: "experience-vs-deliberate-practice-software-engineers"
 readingTime: "8 min read"
 image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200"
-imageAlt: "Open paper notebook with a pen resting on it, representing a software engineer's daily training journal"
+imageAlt: "Close-up of a fountain pen writing in a lined notebook"
 ---
 
 Writing code got boring.

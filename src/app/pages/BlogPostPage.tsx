@@ -266,12 +266,16 @@ export function BlogPostPage() {
     );
   }
 
+  const postImageUrl = post.image
+    ? new URL(post.image, 'https://www.joelkarr.com').href
+    : undefined;
+
   const blogPostingJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    image: post.image || 'https://www.joelkarr.com/og-image.png',
+    image: postImageUrl || 'https://www.joelkarr.com/og-image.png',
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -298,7 +302,7 @@ export function BlogPostPage() {
         title={post.title}
         description={post.description}
         path={`/blog/${post.slug}`}
-        image={post.image || undefined}
+        image={postImageUrl}
         imageAlt={post.imageAlt || undefined}
         type="article"
         publishedTime={post.date}
@@ -364,6 +368,16 @@ export function BlogPostPage() {
               </span>
               <span>By {post.author}</span>
             </div>
+
+            {post.image && (
+              <img
+                src={post.image}
+                alt={post.imageAlt}
+                width={1600}
+                height={900}
+                className="mt-8 aspect-video w-full object-cover rounded-xl border border-gray-200"
+              />
+            )}
           </div>
         </div>
 
