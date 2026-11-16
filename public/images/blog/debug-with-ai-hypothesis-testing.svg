@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#edf0eb"/>
+<rect x="120" y="100" width="1360" height="700" rx="28" fill="#fff"/>
+<g font-family="Arial,sans-serif" fill="#243c3a">
+<text x="200" y="205" font-size="25" letter-spacing="5">FOLLOW THE EVIDENCE</text>
+<text x="200" y="285" font-size="52" font-weight="700">Two requests. One revealing trace.</text>
+<text x="200" y="415" font-size="28">cab</text><text x="200" y="570" font-size="28">cabinet</text>
+<text x="950" y="660" font-size="24">Current result arrives first</text>
+<text x="950" y="710" font-size="24" fill="#a35a37">Older result arrives later</text>
+</g>
+<path d="M390 405H1290" stroke="#a35a37" stroke-width="8"/>
+<path d="M500 560H1020" stroke="#347f78" stroke-width="8"/>
+<path d="M1020 350V605M1290 350V605" stroke="#cad3cd" stroke-dasharray="8 12" stroke-width="3"/>
+<g fill="#a35a37"><circle cx="390" cy="405" r="17"/><circle cx="1290" cy="405" r="17"/></g>
+<g fill="#347f78"><circle cx="500" cy="560" r="17"/><circle cx="1020" cy="560" r="17"/></g>
+<path d="M390 740H820m-20-14 20 14-20 14" fill="none" stroke="#62736d" stroke-width="3"/>
+<text x="390" y="715" font-family="Arial,sans-serif" font-size="22" fill="#62736d">TIME</text>
+</svg>

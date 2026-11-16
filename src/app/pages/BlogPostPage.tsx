@@ -436,6 +436,7 @@ export function BlogPostPage() {
               </div>
 
               {/* Book launch list */}
+              {post.slug !== 'debug-with-ai-hypothesis-testing' && (
               <div className="mt-12 bg-gray-50 border border-gray-200 rounded-xl p-8">
                 <NewsletterSignup
                   source={`blog:${post.slug}`}
@@ -445,6 +446,7 @@ export function BlogPostPage() {
                   }
                 />
               </div>
+              )}
 
               {/* Comments */}
               <div className="mt-12 pt-8 border-t border-gray-200">
