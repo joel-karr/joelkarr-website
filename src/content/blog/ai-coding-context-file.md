@@ -157,4 +157,4 @@ Start with one part of the codebase and one correction you are tired of repeatin
 
 In our example, the most valuable sentence was the one explaining what archived means. Finding and verifying that sentence was engineering work. The file makes it available the next time someone needs it.
 
-These practices are part of my forthcoming book, *Don't Think When You Code: Training Your Engineering Instincts for AI*. [Join the launch list](https://www.joelkarr.com/) for a sample chapter and news when the book is available.
+These practices are part of my forthcoming book, *Don't Think When You Code: Training Your Engineering Instincts for AI*, coming soon from Apress. [Learn more about the book](https://www.joelkarr.com/#book).

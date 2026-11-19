@@ -1,6 +1,5 @@
 import { Linkedin, Mail, BookOpen, ArrowRight } from 'lucide-react';
 import { scrollToSection } from '@/utils/scrollToSection';
-import { NewsletterSignup } from './NewsletterSignup';
 
 export function ConnectSection() {
   return (
@@ -56,15 +55,18 @@ export function ConnectSection() {
           <BookOpen size={40} className="mx-auto mb-4 text-gray-900" aria-hidden="true" />
           <h3 className="text-2xl mb-3 text-gray-900">Get the Book</h3>
           <p className="text-gray-600 mb-6">
-            "Don't Think When You Code" is coming in 2026. Dive deeper into software craft,
+            "Don't Think When You Code: Training Your Engineering Instincts for AI" is coming soon from Apress. Dive deeper into software craft,
             engineering team dynamics, and the path to AI-era engineering leadership.
           </p>
-          <div className="max-w-xl mx-auto text-left">
-            <NewsletterSignup source="connect-section" />
-          </div>
+          <a
+            href="https://www.thriftbooks.com/w/dont-think-when-you-code-the-software-engineering-skills-that-matter-when-ai-writes-the-code_joel-karr/60602498/"
+            className="inline-flex items-center justify-center bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+          >
+            Preorder on ThriftBooks
+          </a>
           <button
             onClick={() => scrollToSection('book')}
-            className="mt-4 text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors"
+            className="block mx-auto mt-4 text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors"
           >
             Learn more about the book
           </button>

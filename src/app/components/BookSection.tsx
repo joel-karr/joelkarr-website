@@ -1,6 +1,5 @@
 import { BookOpen } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { NewsletterSignup } from './NewsletterSignup';
 
 export function BookSection() {
   const chapterHighlights = [
@@ -50,12 +49,14 @@ export function BookSection() {
           <div className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 text-gray-600 mb-4">
               <BookOpen size={20} aria-hidden="true" />
-              <span className="uppercase tracking-wider text-sm">Coming 2026</span>
+              <span className="uppercase tracking-wider text-sm">Coming soon from Apress</span>
             </div>
 
             <h2 itemProp="name" className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-gray-900">
               Don't Think<br />When You Code
             </h2>
+
+            <p className="text-xl text-gray-700 mb-6">Training Your Engineering Instincts for AI</p>
 
             <p itemProp="description" className="text-xl text-gray-700 mb-6 leading-relaxed">
               A book about the craft of software engineering in the AI era, drawn from 20+ years of
@@ -70,11 +71,12 @@ export function BookSection() {
               to building software and leading engineers.
             </p>
 
-            <NewsletterSignup
-              source="book-section"
-              heading="Read it first"
-              description="Join the launch list for a free sample chapter and first notice when the book is available."
-            />
+            <a
+              href="https://www.thriftbooks.com/w/dont-think-when-you-code-the-software-engineering-skills-that-matter-when-ai-writes-the-code_joel-karr/60602498/"
+              className="inline-flex items-center justify-center bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+            >
+              Preorder on ThriftBooks
+            </a>
           </div>
 
           <div className="order-1 lg:order-2">

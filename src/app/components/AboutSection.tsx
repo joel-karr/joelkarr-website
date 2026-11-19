@@ -6,7 +6,7 @@ export function AboutSection() {
     {
       icon: BookOpen,
       title: "Author",
-      description: "Author of \"Don't Think When You Code\" (coming 2026) — teaching software craft and deliberate practice through 20+ years of engineering stories"
+      description: "Author of \"Don't Think When You Code\" (coming soon from Apress) - teaching software craft and deliberate practice through 20+ years of engineering stories"
     },
     {
       icon: Lightbulb,

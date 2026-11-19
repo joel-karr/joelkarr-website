@@ -15,7 +15,6 @@ import {
   Check,
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
-import { NewsletterSignup } from '../components/NewsletterSignup';
 import { findClosestPostBySlug, getPostBySlug, getRelatedPosts, formatDate } from '@/lib/blog';
 import type { BlogPost } from '@/lib/blogTypes';
 
@@ -435,16 +434,12 @@ export function BlogPostPage() {
                 <AuthorInfo />
               </div>
 
-              {/* Book launch list */}
+              {/* Book details */}
               {post.slug !== 'debug-with-ai-hypothesis-testing' && (
               <div className="mt-12 bg-gray-50 border border-gray-200 rounded-xl p-8">
-                <NewsletterSignup
-                  source={`blog:${post.slug}`}
-                  heading="Enjoyed this? It's from the book."
-                  description={
-                    'These ideas come from "Don’t Think When You Code," coming in 2026. Join the launch list for a free sample chapter.'
-                  }
-                />
+                <h4 className="text-xl text-gray-900 mb-3">Don't Think When You Code</h4>
+                <p className="text-gray-600 mb-4">Training Your Engineering Instincts for AI. Coming soon from Apress.</p>
+                <Link to="/#book" className="text-gray-900 underline underline-offset-4">Learn more about the book</Link>
               </div>
               )}
 

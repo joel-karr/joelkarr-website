@@ -100,4 +100,4 @@ If the same mistake keeps appearing in generated code, update the shared instruc
 
 On your next AI-generated pull request, write the most important requirement before opening the diff. Then choose one test that could expose a violation. You'll have a clearer basis for approval and a concrete way to train the judgment that approval depends on.
 
-These practices are part of my forthcoming book, *Don't Think When You Code: Training Your Engineering Instincts for AI*. [Join the launch list](https://www.joelkarr.com/) for a sample chapter and news when the book is available.
+These practices are part of my forthcoming book, *Don't Think When You Code: Training Your Engineering Instincts for AI*, coming soon from Apress. [Learn more about the book](https://www.joelkarr.com/#book).
