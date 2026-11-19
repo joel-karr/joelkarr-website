@@ -83,9 +83,11 @@ export function BookSection() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl transform -rotate-2"></div>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1637962638310-e6787f7eb324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcGVuJTIwYm9vayUyMHJlYWRpbmd8ZW58MXx8fHwxNzcyMTgzNTYwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Don't Think When You Code — a book on software engineering craft and AI-era development"
-                className="relative rounded-2xl shadow-2xl w-full object-cover"
+                src="/images/book-apress-official.jpg"
+                alt="Official Apress cover of Don't Think When You Code: Training Your Engineering Instincts for AI by Joel Karr, with a pencil and shavings"
+                width={264}
+                height={400}
+                className="relative rounded-lg shadow-2xl w-full max-w-[264px] mx-auto h-auto object-contain"
                 loading="lazy"
               />
             </div>
